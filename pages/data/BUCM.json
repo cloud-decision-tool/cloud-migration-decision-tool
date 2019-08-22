@@ -1,0 +1,68 @@
+{
+  "BUCM" : [
+  {
+    "question" : "What is the architecture of the application?",
+    "options": [
+        { "text" :"monolithic", "answer": "private", "weightage": 80 },
+        { "text" :"Cloud-native", "answer": "public", "weightage": 20 }
+      ],
+    "force" : true,
+    "help": "The cloud native pattern consists of microservices architecture, containerized services, and distributed management and orchestration.In software engineering, a monolithic application describes a single-tiered software application in which the user interface and data access code are combined into a single program from a single platform. A monolithic application is self contained, and independent from other computing applications.A software system is called monolithic. if it has a monolithic architecture, in which functionally distinguishable aspects   (for example data input and output, data processing, error handling, and the user interface) are all interwoven, rather than containing architecturally separate components.",
+    "video" : "Jz_nzZQD9Cw"
+  },
+  {
+    "question" : "What is the requirement for availability for the application?",
+    "options": [
+        { "text" :">99.95%", "answer": "private", "weightage": 80 },
+        { "text" :"99.9-99.95%", "answer": "public", "weightage": 20 }
+      ],
+    "force" : false,
+    "help": "If the Architecture is monolithic and application is deployed to two data centres, then you are recommended to choose option a."
+  },
+  {
+    "question" : "Is the application usage fixed all year round or variable? ",
+    "options": [
+        { "text" :"Yes, usage is static", "answer": "private", "weightage": 60 },
+        { "text" :"No, usage is variable", "answer": "public", "weightage": 40 }
+      ],
+    "force" : false,
+    "help": "Is the application supposed to be used regularly over the year or does it changes seasonally or in a predictable manner? For example, ATO website is most used during the end of the Fiscal year, so its usage is variable, whereas “Game of Thrones” application’s usage is regular over the year, so its usage is static."
+  },
+  {
+    "question" : "Is the application data sensitive or publicly available?",
+    "options": [
+        { "text" :"Yes, the data is highly sensitive", "answer": "private", "weightage": 80 },
+        { "text" :"No, the data is not sensitive", "answer": "public", "weightage": 20 }
+      ],
+    "force" : true,
+    "help": "If the data needs to be protected from unwarranted access due to legal or ethical reasons, it is recommended you choose option a."
+  },
+  {
+    "question" : "Do your company intend to control and manage the platform on which the business functions are deployed?",
+    "options": [
+        { "text" :"Yes, the company want to keep the control to itself", "answer": "private", "weightage": 80 },
+        { "text" :"No, the company may not control the platform itself", "answer": "public", "weightage": 20 }
+      ],
+    "force" : false,
+    "help": "If the company want to manage the data centre itself or if it has mission critical applications and does not want anyone outside the company to control it, then it is recommended you choose option a or if the application has been created with a cloud native architecture, enterprise is likely to select public cloud."
+  },
+  {
+    "question" : "Does the application have any regulatory requirements such as Australian Government Information Security Manual (ISM) AS/NZS ISO/IEC 27001:2006, AS/NZS ISO 9000, FIPS 140-2 , Australian Earthquake Loading Standard AS1170, APRA certification and PCI Compliance ?",
+    "options": [
+        { "text" :"Yes, the company needs to maintain regulations", "answer": "private", "weightage": 60 },
+        { "text" :"No, there is no such requirement", "answer": "public", "weightage": 40 }
+      ],
+    "force" : false,
+    "help": "Does your company needs to comply any regulations of any regulatory body? For example, any service provider that handles, processes, stores or transmits credit card data needs to fulfil PCI compliance or if your organisation is an ICT system, then it needs to follow ISM regulations."
+  },
+  {
+    "question" : "What is the level of utilisation of commodity or prolific computing hardware and system software?",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : false,
+    "help": "Does your company needs to comply any regulations of any regulatory body? For example, any service provider that handles, processes, stores or transmits credit card data needs to fulfil PCI compliance or if your organisation is an ICT system, then it needs to follow ISM regulations."
+  }
+  ]
+}

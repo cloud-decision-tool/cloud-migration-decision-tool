@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="792px" height="460px" viewBox="0 0 792 460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>students-cap</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="students-cap" fill="#8E44AD" fill-rule="nonzero">
+            <path d="M395.904,309.016 L159.701,236.316 L159.701,307.84 L159.701,357.736 C159.701,413.869 265.488,459.38 395.975,459.38 C526.455,459.38 632.26,413.869 632.26,357.736 C632.26,357.294 632.115,356.85 632.106,356.418 L632.106,236.316 L395.904,309.016 Z" id="Shape"></path>
+            <path d="M0,152.734 L84.383,182.919 L91.574,167.518 L122.574,164.883 L126.994,169.482 L100.393,175.79 L96.516,187.265 C96.509,187.265 36.429,312.869 45.253,374.315 C45.253,374.315 82.755,396.685 120.241,374.315 L130.203,206.315 L130.203,192.331 L186.003,179.743 L182.062,189.448 L140.458,202.977 L159.7,209.851 L395.903,282.551 L632.104,209.851 L791.803,152.735 L395.903,0.422 L0,152.734 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

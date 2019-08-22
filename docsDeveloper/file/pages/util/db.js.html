@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">pages/util/db.js | touchonadmin</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Boilerplate with Next JS, ANT Design, Redux &amp; SCSS"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="touchonadmin"><meta property="twitter:description" content="Boilerplate with Next JS, ANT Design, Redux &amp; SCSS"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util">util</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/db.js~DB_Setup.html">DB_Setup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/dbops.js~DB_operations.html">DB_operations</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PhoneNumberValidate">PhoneNumberValidate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-b64DecodeUnicode">b64DecodeUnicode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkPassword">checkPassword</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatPhoneNumber">formatPhoneNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getIndexOfAttrInObj">getIndexOfAttrInObj</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mergeObjs">mergeObjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeKey">removeKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateEmail">validateEmail</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dB_Setup">dB_Setup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util-errors">util/errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/errors/errors.js~CustomError.html">CustomError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/errors/errors.js~PropertyRequiredError.html">PropertyRequiredError</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">pages/util/db.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Created by Ravi on 23/9/17.
+ */
+
+
+var firebase = require(&quot;firebase&quot;);
+var debug = false;
+
+class DB_Setup{
+
+    constructor() {
+        this._isDebug = debug;
+
+        var config = {
+            apiKey: &quot;AIzaSyCbQDxZ7hh5L-u1Ck7vRougC49G-e6ljQo&quot;,
+            authDomain: &quot;tcabs-swin.firebaseapp.com&quot;,
+            databaseURL: &quot;https://tcabs-swin.firebaseio.com&quot;,
+            projectId: &quot;tcabs-swin&quot;,
+            storageBucket: &quot;tcabs-swin.appspot.com&quot;,
+            messagingSenderId: &quot;85668308042&quot;
+          };
+
+        if(debug){
+            config = {
+              //set production config
+            }
+        }
+        var app = null;
+        if (firebase.apps.length === 0)
+            app = firebase.initializeApp(config);
+        else
+            app = firebase;
+
+        this.log = this.log.bind(this);
+        this.getIsDevOrProd = this.getIsDevOrProd.bind(this);
+        return app;
+    }
+
+    log(m){
+        console.log(&quot;LOGGER &quot;, m);
+    }
+
+    getIsDevOrProd(){
+      return this._isDebug;
+    }
+
+}
+
+export default new DB_Setup();
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

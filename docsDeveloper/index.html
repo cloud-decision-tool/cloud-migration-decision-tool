@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | touchonadmin</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Boilerplate with Next JS, ANT Design, Redux &amp; SCSS"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="touchonadmin"><meta property="twitter:description" content="Boilerplate with Next JS, ANT Design, Redux &amp; SCSS"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util">util</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/db.js~DB_Setup.html">DB_Setup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/dbops.js~DB_operations.html">DB_operations</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PhoneNumberValidate">PhoneNumberValidate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-b64DecodeUnicode">b64DecodeUnicode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkPassword">checkPassword</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatPhoneNumber">formatPhoneNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getIndexOfAttrInObj">getIndexOfAttrInObj</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mergeObjs">mergeObjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeKey">removeKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateEmail">validateEmail</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dB_Setup">dB_Setup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util-errors">util/errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/errors/errors.js~CustomError.html">CustomError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/errors/errors.js~PropertyRequiredError.html">PropertyRequiredError</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-strong-tcabs--strong-"><strong>TCABS</strong></h1><h1 id="run-esdoc">run ESDoc</h1><p>./node_modules/.bin/esdoc</p>
+<h1 id="see-a-documentation">see a documentation</h1><p>open ./docs/index.html</p>
+<p>A boilerplate with <a href="https://github.com/zeit/next.js/">NextJS</a> + <a href="ant.design">ANT Design</a> + Redux + <a href="https://www.npmjs.com/package/@zeit/next-sass">Styled JSX with SCSS</a></p>
+<h4 id="-a-href--https---fifi-ashinga-herokuapp-com---demo--a-"><a href="https://fifi-ashinga.herokuapp.com/">DEMO</a></h4><p>With a lot of research and experimentation NextJS is the best framework to work with React JS ( Server side rendering + Code Splitting ) and better performance.</p>
+<p>whereas working with <a href="https://github.com/kriasoft/react-starter-kit">React Starter Kit</a> doesn&apos;t give better output for production ( like Code Splitting ) ( please share if you know how to do it ).</p>
+<h3 id="what-it-has">What it has</h3><ul>
+<li>[x] SCSS</li>
+<li>[x] Seperate SCSS files</li>
+<li>[x] Integrate ANT design</li>
+<li>[x] Express JS</li>
+<li>[x] Code Compression ( Extreme performance )</li>
+</ul>
+<h3 id="things-to-do">Things to do</h3><ul>
+<li>[ ] Integrate Redux</li>
+</ul>
+<p>Many other UI frameworks like Grommet, Materialise CSS etc are doing a good job. I see ANT Design is much more sophisticated.</p>
+<h3 id="how">How</h3><ol>
+<li>Development <code>npm run dev</code></li>
+<li>Build &amp; Run <code>npm run build</code> &amp;&amp;  <code>npm run start</code></li>
+</ol>
+<h3 id="doc">Doc</h3><h4 id="1--ant-design-imports-optimisation---to-reduce-build-size--">1. ANT Design imports optimisation ( to reduce build size )</h4><p>Replace</p>
+<pre><code><code class="source-code prettyprint">import { DatePicker, Avatar, Badge } from &apos;antd&apos;;</code>
+</code></pre><p>with</p>
+<pre><code><code class="source-code prettyprint">import DatePicker from &apos;antd/lib/date-picker&apos;;
+import Avatar from &apos;antd/lib/avatar&apos;;
+import Badge from &apos;antd/lib/badge&apos;;</code>
+</code></pre><p>with that build changed from <strong>1.4MB to 560KB</strong></p>
+<h4 id="2--ant-design-css-import">2. ANT Design CSS import</h4><p>Instead statical import of full css  like this</p>
+<pre><code><code class="source-code prettyprint">import stylesheet from &apos;antd/dist/antd.min.css&apos;;</code>
+</code></pre><p>Use</p>
+<pre><code><code class="source-code prettyprint">import stylesheet from &apos;antd/lib/style/index.css&apos;
+import Badge_CSS from &apos;antd/lib/badge/style/index.css&apos;</code>
+</code></pre><h3 id="user-documentation">User Documentation</h3><h3 id="developer-documentation">Developer Documentation</h3><p>step 1: build sources</p>
+<pre><code><code class="source-code prettyprint">./node_modules/.bin/esdoc</code>
+</code></pre><p>step 2: Run index files</p>
+<pre><code><code class="source-code prettyprint">open ./docsDeveloper/index.html</code>
+</code></pre></div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">pages/util/dbops.js | touchonadmin</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Boilerplate with Next JS, ANT Design, Redux &amp; SCSS"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="touchonadmin"><meta property="twitter:description" content="Boilerplate with Next JS, ANT Design, Redux &amp; SCSS"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util">util</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/db.js~DB_Setup.html">DB_Setup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/dbops.js~DB_operations.html">DB_operations</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PhoneNumberValidate">PhoneNumberValidate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-b64DecodeUnicode">b64DecodeUnicode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkPassword">checkPassword</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatPhoneNumber">formatPhoneNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getIndexOfAttrInObj">getIndexOfAttrInObj</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mergeObjs">mergeObjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeKey">removeKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateEmail">validateEmail</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dB_Setup">dB_Setup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util-errors">util/errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/errors/errors.js~CustomError.html">CustomError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/pages/util/errors/errors.js~PropertyRequiredError.html">PropertyRequiredError</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">pages/util/dbops.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import dbConn from &apos;./db&apos;;
+import Config from &apos;./config&apos;;
+import { b64DecodeUnicode } from &apos;./util&apos;;
+import { message, modal, notification } from &apos;antd&apos;;
+var qs = require(&apos;qs&apos;);
+import axios from &apos;axios&apos;;
+
+class DB_operations{
+    constructor() {
+        this.db = dbConn;
+
+        this.addUser = this.addUser.bind(this);
+        this.create_user = this.create_user.bind(this);
+
+        this.get_user_info = this.get_user_info.bind(this);
+        this.get_user_type = this.get_user_type.bind(this);
+        this.get_current_user = this.get_current_user.bind(this);
+        this.getData = this.getData.bind(this);
+        this.getDataWithKey = this.getDataWithKey.bind(this);
+
+        this.log = this.log.bind(this);
+        this.listen_user_events = this.listen_user_events.bind(this);
+
+        this.redirect = this.redirect.bind(this);
+
+        this.sign_in = this.sign_in.bind(this);
+        this.sign_out = this.sign_out.bind(this);
+        this.save_data = this.save_data.bind(this);
+
+        this.success = this.success.bind(this);
+        this.error = this.error.bind(this);
+        // this.query = this.query.bind(this);
+
+        this.uploadStudents = this.uploadStudents.bind(this);
+        this.disableUser = this.disableUser.bind(this);
+
+        this.query = this.query.bind(this);
+    }
+
+    addUser(path, userObject, callback, error){
+      // debugger;
+      this.db.auth().currentUser.getIdToken()
+      .then((idToken) =&gt; {
+          let options = {
+            &apos;idToken&apos;: idToken,
+            &apos;userData&apos; : userObject
+          };
+          return axios.post(path,
+            qs.stringify(options)
+          );
+      })
+      .then( callback ? callback : (response) =&gt; {
+        console.log(response);
+      })
+      .catch(error? error :(err) =&gt; {
+        console.log(err);
+      });
+    }
+
+    success(title, msg){
+      // message.success(msg);
+      notification[&apos;success&apos;]({
+        message: title,
+        description: msg
+      });
+    }
+
+    error(title, msg){
+      // message.error(msg);
+      notification[&apos;error&apos;]({
+        message: title,
+        description: msg
+      });
+      // throw new Error(&apos;Error &apos;, msg);
+    }
+
+    redirect(location){
+      window.location.href = location;
+    }
+
+    create_user(username, pwd, callback, error){
+      this.db.auth().createUserWithEmailAndPassword(username, pwd).then(callback?callback:(m)=&gt;{this.log(m);}).catch(error?error:(e)=&gt;{this.log(e)});
+    }
+
+    log(m){
+        console.log(&quot;LOGGER &quot;, m);
+    }
+
+    listen_user_events(callback){
+        this.db.auth().onAuthStateChanged(callback ? callback : function (user) {
+            alert(&quot;SDSFD&quot;+JSON.stringify(user));
+        });
+    }
+
+    get_user_info(callback,error) {
+        if(this.getCurrentUser())
+        this.getData(&apos;users/&apos;+this.getCurrentUser()+&apos;/&apos;, callback? callback: function(data){
+            this.log(data.val())
+        });
+        else
+            error();
+    }
+
+    get_current_user(){
+        if(this.db.auth().currentUser)
+          return this.db.auth().currentUser.uid;
+        else
+          return null;
+    }
+
+    get_user_token(refresh, callback, error){
+      this.db.auth().currentUser.getIdToken(refresh).then(callback?callback:(m)=&gt;{this.log(m);}).catch(error?error:(e)=&gt;{this.log(e)});
+    }
+
+    getData(path, callback, error){
+        this.db.database().ref(path).once(&apos;value&apos;).then(callback).catch( error ? error : function (error) {
+            console.log(&quot;data fetch error&quot;, error)
+        });
+    }
+
+    getDataWithKey(path, queryParams, callback, error){
+        /*
+         queryParams : orderBy , orderByVal, paging,
+         */
+
+        this.db.database().ref(path)
+            .orderByChild(queryParams.orderBy)
+            .startAt(queryParams.orderByVal)
+            .limitToLast(queryParams.paging)
+            .once(&apos;value&apos;)
+            .then(callback ? callback : (r) =&gt; {
+                }).catch(error ? error : (e) =&gt; {
+            });
+    }
+
+    get_user_type(callback,error){
+      this.db.auth().currentUser.getIdToken()
+      .then((idToken) =&gt; {
+         // Parse the ID token.
+         const payload = JSON.parse(b64DecodeUnicode(idToken.split(&apos;.&apos;)[1]));
+         // if (!!payload[&apos;admin&apos;]) {
+         //   showAdminUI();
+         // }
+         callback(payload);
+      })
+      .catch((error) =&gt; {
+        console.log(error);
+      });
+    }
+
+    sign_out(callback, error){
+        this.db.auth().signOut().then( callback ? callback : () =&gt; {
+            // Sign-out successful.
+            this.redirect(Config.url_home);
+        }, error ? error : (e)=&gt; {
+            // An error happened.
+        });
+    }
+
+
+
+    sign_in(username,pwd,callback,error){
+        this.db.auth().signInWithEmailAndPassword(username, pwd).then(callback?callback:(m)=&gt;{this.log(m);}).catch(error?error:(e)=&gt;{this.log(e)});
+    }
+
+    save_data(path,value, callback, error){
+        this.db.database().ref(path).set(value).then(callback).catch( error ? error : function (error) {
+            console.log(&quot;fb error&quot;, error)
+        });
+    }
+
+    uploadStudents(path, studentsData, studentsProfileData, callback, error){
+      this.db.auth().currentUser.getIdToken()
+      .then((idToken) =&gt; {
+          return axios.post(path,
+            qs.stringify({
+              &apos;idToken&apos;: idToken,
+              &apos;usersData&apos; : studentsData,
+              &apos;usersSingleData&apos; : studentsProfileData
+            })
+          );
+      })
+      .then(function (response) {
+        if(callback)
+        callback(response)
+
+        // console.log(&quot; TEST ING &quot;);
+        // console.log(response);
+      })
+      .catch((err) =&gt; {
+        if(error)
+        error(err)
+        else
+        console.log(err);
+      });
+    }
+
+    disableUser(path, uid, status, callback, error){
+
+      this.db.auth().currentUser.getIdToken()
+      .then((idToken) =&gt; {
+          let options = {
+            &apos;idToken&apos;: idToken,
+            &apos;userId&apos; : uid,
+            &apos;status&apos; : status
+          };
+          return axios.post(path,
+            qs.stringify(options)
+          );
+      })
+      .then(function (response) {
+          if(callback)
+          callback(response)
+      })
+      .catch((err) =&gt; {
+        if(error)
+        error(err)
+        else
+        console.log(err);
+      });
+    }
+
+
+    query(path, queryParams, callback, error){
+      var query = this.db.database().ref(path);
+
+      if(queryParams.orderBy == &apos;key&apos;)
+        query = query.orderByKey();
+      else if(queryParams.orderBy)
+      {
+        if(queryParams.orderBy.length &gt; 0)
+          query = query.orderByChild(queryParams.orderBy);
+      }
+
+      if(queryParams.order == &apos;asc&apos;){
+        query = query.limitToFirst(queryParams.paging);
+
+        if(queryParams.lastKey)
+          query = query.startAt(queryParams.lastKey);
+      }
+
+      if(queryParams.order == &apos;desc&apos;){
+        //alert(&apos;dd&apos;);
+        query = query.limitToLast(queryParams.paging);
+
+        if(queryParams.lastKey)
+          query = query.endAt(queryParams.lastKey);
+      }
+
+      query.once(&apos;value&apos;)
+      .then(callback ? callback : (r) =&gt; {})
+      .catch(error ? error : (e) =&gt; {});
+
+    }
+
+}
+
+export default DB_operations;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

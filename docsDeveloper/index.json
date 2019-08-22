@@ -1,0 +1,1965 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "pages/.external-ecmascript.js",
+    "static": true,
+    "longname": "pages/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "pages/util/config.js",
+    "content": "/**\n * Created by Ravi on 23/9/17.\n */\nconst IMG_PATH = \"/static/images/\";\nconst API_URL = \"https://us-central1-tcabs-swin.cloudfunctions.net\"\n\nconst networkURLS = {\n  //STUDENTS API\n  \"adminUsersImport\" : API_URL+\"/adminUsersImport\",\n  \"adminDisableUser\" : API_URL+\"/disableUser\",\n  \"adminAddUser\"     : API_URL+\"/addUser\",\n\n  //EMPLOYEES API\n  \"adminEmployeesImport\" : API_URL+\"/adminEmployeesImport\",\n  \"adminDisableEmployee\" : API_URL+\"/disableEmployee\",\n  \"adminAddEmployee\"     : API_URL+\"/addEmployee\",\n\n  //UNITS API\n  \"adminAddUnit\" : \"/units\"\n};\n\nconst UI = {\n  \"user_save_success\" : 'Save Successful',\n  \"user_save_error\" : 'Error saving user profile',\n  \"user_disable_success\" : ' Successful',\n  \"user_disable_error\" : ' user ',\n  \"user_edit_success\" : \"\",\n  \"student_add\" : \"Add Student\",\n  \"employee_add\" : \"Add Employee\",\n\n  //Database\n  \"database_error\" : 'Unable to fetch data. Please contact database administrator'\n}\n\nexport default {\n    \"isDebug\" : true,\n\n    \"UI\" : UI,\n\n    \"NETWORK\" : networkURLS,\n\n    \"url_home\" : \"/\", //home page\n\n    //***** ADMIN PAGES ******\n    \"url_admin\" : \"/admin/student\",  //Admin default page\n\n    //***** ADMIN EMPLOYEE PAGE ******\n    \"url_admin_employee\" : {\n      \"name\" : \"EMPLOYEES\",\n      \"routerURL\" : \"/admin/employee\", // this is server registered url name\n      \"fileName\" : \"admin_employee\",   //this if filename\n      \"icon_active\" : IMG_PATH+\"user-icon.svg\",\n      \"icon_normal\" : IMG_PATH+\"user-icon-dark.svg\",\n    },\n\n    //***** ADMIN STUDENT PAGE ******\n    \"url_admin_student\" : {\n      \"name\" : \"STUDENTS\",\n      \"routerURL\" : \"/admin/student\", // this is server registered url name\n      \"fileName\" : \"admin_student\",   //this if filename\n      \"icon_active\" : IMG_PATH+\"students-cap.svg\",\n      \"icon_normal\" : IMG_PATH+\"students-cap-dark.svg\",\n    },\n\n    //***** UNIT PAGES ******\n    \"url_admin_unit\" : {\n      \"name\" : \"UNITS\",\n      \"routerURL\" : \"/admin/unit\", // this is server registered url name\n      \"fileName\" : \"admin_unit\",   //this if filename\n      \"icon_active\" : IMG_PATH+\"open-book.svg\",\n      \"icon_normal\" : IMG_PATH+\"open-book-dark.svg\",\n    },\n\n    \"url_admin_logout\" : {\n      \"name\" : \"LOGOFF\",\n      \"routerURL\" : \"/\", // this is server registered url name\n      \"fileName\" : \"admin_unit\",   //this if filename\n      \"icon_normal\" : IMG_PATH+\"emergency-exit.svg\",\n    },\n\n    //***** CONVENOR PAGES ******\n    // \"url_admin_employee\" : {\n    //   \"name\" : \"EMPLOYEES\",\n    //   \"routerURL\" : \"/admin/employee\",\n    //   \"fileName\" : \"admin_employee\"\n    // },\n\n    //***** SUPERVISOR PAGES ******\n    // \"url_admin_employee\" : {\n    //   \"name\" : \"EMPLOYEES\",\n    //   \"routerURL\" : \"/admin/employee\",\n    //   \"fileName\" : \"admin_employee\"\n    // },\n\n\n    \"url_convenor\" : \"/convenor\",\n\n    \"url_supervisor\" : \"/supervisor\"\n}\n",
+    "static": true,
+    "longname": "/Users/touchon/Desktop/TCABS/DEV_BIT/pages/util/config.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "IMG_PATH",
+    "memberof": "pages/util/config.js",
+    "static": true,
+    "longname": "pages/util/config.js~IMG_PATH",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/config.js",
+    "importStyle": null,
+    "description": "Created by Ravi on 23/9/17.",
+    "lineNumber": 4,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "API_URL",
+    "memberof": "pages/util/config.js",
+    "static": true,
+    "longname": "pages/util/config.js~API_URL",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "networkURLS",
+    "memberof": "pages/util/config.js",
+    "static": true,
+    "longname": "pages/util/config.js~networkURLS",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"adminUsersImport\": *, \"adminDisableUser\": *, \"adminAddUser\": *, \"adminEmployeesImport\": *, \"adminDisableEmployee\": *, \"adminAddEmployee\": *, \"adminAddUnit\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "UI",
+    "memberof": "pages/util/config.js",
+    "static": true,
+    "longname": "pages/util/config.js~UI",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"user_save_success\": string, \"user_save_error\": string, \"user_disable_success\": string, \"user_disable_error\": string, \"user_edit_success\": *, \"student_add\": string, \"employee_add\": string, \"database_error\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "pages/util/db.js",
+    "content": "/**\n * Created by Ravi on 23/9/17.\n */\n\n\nvar firebase = require(\"firebase\");\nvar debug = false;\n\nclass DB_Setup{\n\n    constructor() {\n        this._isDebug = debug;\n\n        var config = {\n            apiKey: \"AIzaSyCbQDxZ7hh5L-u1Ck7vRougC49G-e6ljQo\",\n            authDomain: \"tcabs-swin.firebaseapp.com\",\n            databaseURL: \"https://tcabs-swin.firebaseio.com\",\n            projectId: \"tcabs-swin\",\n            storageBucket: \"tcabs-swin.appspot.com\",\n            messagingSenderId: \"85668308042\"\n          };\n\n        if(debug){\n            config = {\n              //set production config\n            }\n        }\n        var app = null;\n        if (firebase.apps.length === 0)\n            app = firebase.initializeApp(config);\n        else\n            app = firebase;\n\n        this.log = this.log.bind(this);\n        this.getIsDevOrProd = this.getIsDevOrProd.bind(this);\n        return app;\n    }\n\n    log(m){\n        console.log(\"LOGGER \", m);\n    }\n\n    getIsDevOrProd(){\n      return this._isDebug;\n    }\n\n}\n\nexport default new DB_Setup();\n",
+    "static": true,
+    "longname": "/Users/touchon/Desktop/TCABS/DEV_BIT/pages/util/db.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "firebase",
+    "memberof": "pages/util/db.js",
+    "static": true,
+    "longname": "pages/util/db.js~firebase",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/db.js",
+    "importStyle": null,
+    "description": "Created by Ravi on 23/9/17.",
+    "lineNumber": 6,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "debug",
+    "memberof": "pages/util/db.js",
+    "static": true,
+    "longname": "pages/util/db.js~debug",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/db.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "class",
+    "name": "DB_Setup",
+    "memberof": "pages/util/db.js",
+    "static": true,
+    "longname": "pages/util/db.js~DB_Setup",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/db.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 57,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "pages/util/db.js~DB_Setup",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/db.js~DB_Setup#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "_isDebug",
+    "memberof": "pages/util/db.js~DB_Setup",
+    "static": false,
+    "longname": "pages/util/db.js~DB_Setup#_isDebug",
+    "access": "private",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "log",
+    "memberof": "pages/util/db.js~DB_Setup",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/db.js~DB_Setup#log",
+    "access": "public",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "params": [
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "getIsDevOrProd",
+    "memberof": "pages/util/db.js~DB_Setup",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/db.js~DB_Setup#getIsDevOrProd",
+    "access": "public",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "dB_Setup",
+    "memberof": "pages/util/db.js",
+    "static": true,
+    "longname": "pages/util/db.js~dB_Setup",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/db.js",
+    "importStyle": "dB_Setup",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "type": {
+      "types": [
+        "pages/util/db.js~DB_Setup"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "pages/util/dbops.js",
+    "content": "import dbConn from './db';\nimport Config from './config';\nimport { b64DecodeUnicode } from './util';\nimport { message, modal, notification } from 'antd';\nvar qs = require('qs');\nimport axios from 'axios';\n\nclass DB_operations{\n    constructor() {\n        this.db = dbConn;\n\n        this.addUser = this.addUser.bind(this);\n        this.create_user = this.create_user.bind(this);\n\n        this.get_user_info = this.get_user_info.bind(this);\n        this.get_user_type = this.get_user_type.bind(this);\n        this.get_current_user = this.get_current_user.bind(this);\n        this.getData = this.getData.bind(this);\n        this.getDataWithKey = this.getDataWithKey.bind(this);\n\n        this.log = this.log.bind(this);\n        this.listen_user_events = this.listen_user_events.bind(this);\n\n        this.redirect = this.redirect.bind(this);\n\n        this.sign_in = this.sign_in.bind(this);\n        this.sign_out = this.sign_out.bind(this);\n        this.save_data = this.save_data.bind(this);\n\n        this.success = this.success.bind(this);\n        this.error = this.error.bind(this);\n        // this.query = this.query.bind(this);\n\n        this.uploadStudents = this.uploadStudents.bind(this);\n        this.disableUser = this.disableUser.bind(this);\n\n        this.query = this.query.bind(this);\n    }\n\n    addUser(path, userObject, callback, error){\n      // debugger;\n      this.db.auth().currentUser.getIdToken()\n      .then((idToken) => {\n          let options = {\n            'idToken': idToken,\n            'userData' : userObject\n          };\n          return axios.post(path,\n            qs.stringify(options)\n          );\n      })\n      .then( callback ? callback : (response) => {\n        console.log(response);\n      })\n      .catch(error? error :(err) => {\n        console.log(err);\n      });\n    }\n\n    success(title, msg){\n      // message.success(msg);\n      notification['success']({\n        message: title,\n        description: msg\n      });\n    }\n\n    error(title, msg){\n      // message.error(msg);\n      notification['error']({\n        message: title,\n        description: msg\n      });\n      // throw new Error('Error ', msg);\n    }\n\n    redirect(location){\n      window.location.href = location;\n    }\n\n    create_user(username, pwd, callback, error){\n      this.db.auth().createUserWithEmailAndPassword(username, pwd).then(callback?callback:(m)=>{this.log(m);}).catch(error?error:(e)=>{this.log(e)});\n    }\n\n    log(m){\n        console.log(\"LOGGER \", m);\n    }\n\n    listen_user_events(callback){\n        this.db.auth().onAuthStateChanged(callback ? callback : function (user) {\n            alert(\"SDSFD\"+JSON.stringify(user));\n        });\n    }\n\n    get_user_info(callback,error) {\n        if(this.getCurrentUser())\n        this.getData('users/'+this.getCurrentUser()+'/', callback? callback: function(data){\n            this.log(data.val())\n        });\n        else\n            error();\n    }\n\n    get_current_user(){\n        if(this.db.auth().currentUser)\n          return this.db.auth().currentUser.uid;\n        else\n          return null;\n    }\n\n    get_user_token(refresh, callback, error){\n      this.db.auth().currentUser.getIdToken(refresh).then(callback?callback:(m)=>{this.log(m);}).catch(error?error:(e)=>{this.log(e)});\n    }\n\n    getData(path, callback, error){\n        this.db.database().ref(path).once('value').then(callback).catch( error ? error : function (error) {\n            console.log(\"data fetch error\", error)\n        });\n    }\n\n    getDataWithKey(path, queryParams, callback, error){\n        /*\n         queryParams : orderBy , orderByVal, paging,\n         */\n\n        this.db.database().ref(path)\n            .orderByChild(queryParams.orderBy)\n            .startAt(queryParams.orderByVal)\n            .limitToLast(queryParams.paging)\n            .once('value')\n            .then(callback ? callback : (r) => {\n                }).catch(error ? error : (e) => {\n            });\n    }\n\n    get_user_type(callback,error){\n      this.db.auth().currentUser.getIdToken()\n      .then((idToken) => {\n         // Parse the ID token.\n         const payload = JSON.parse(b64DecodeUnicode(idToken.split('.')[1]));\n         // if (!!payload['admin']) {\n         //   showAdminUI();\n         // }\n         callback(payload);\n      })\n      .catch((error) => {\n        console.log(error);\n      });\n    }\n\n    sign_out(callback, error){\n        this.db.auth().signOut().then( callback ? callback : () => {\n            // Sign-out successful.\n            this.redirect(Config.url_home);\n        }, error ? error : (e)=> {\n            // An error happened.\n        });\n    }\n\n\n\n    sign_in(username,pwd,callback,error){\n        this.db.auth().signInWithEmailAndPassword(username, pwd).then(callback?callback:(m)=>{this.log(m);}).catch(error?error:(e)=>{this.log(e)});\n    }\n\n    save_data(path,value, callback, error){\n        this.db.database().ref(path).set(value).then(callback).catch( error ? error : function (error) {\n            console.log(\"fb error\", error)\n        });\n    }\n\n    uploadStudents(path, studentsData, studentsProfileData, callback, error){\n      this.db.auth().currentUser.getIdToken()\n      .then((idToken) => {\n          return axios.post(path,\n            qs.stringify({\n              'idToken': idToken,\n              'usersData' : studentsData,\n              'usersSingleData' : studentsProfileData\n            })\n          );\n      })\n      .then(function (response) {\n        if(callback)\n        callback(response)\n\n        // console.log(\" TEST ING \");\n        // console.log(response);\n      })\n      .catch((err) => {\n        if(error)\n        error(err)\n        else\n        console.log(err);\n      });\n    }\n\n    disableUser(path, uid, status, callback, error){\n\n      this.db.auth().currentUser.getIdToken()\n      .then((idToken) => {\n          let options = {\n            'idToken': idToken,\n            'userId' : uid,\n            'status' : status\n          };\n          return axios.post(path,\n            qs.stringify(options)\n          );\n      })\n      .then(function (response) {\n          if(callback)\n          callback(response)\n      })\n      .catch((err) => {\n        if(error)\n        error(err)\n        else\n        console.log(err);\n      });\n    }\n\n\n    query(path, queryParams, callback, error){\n      var query = this.db.database().ref(path);\n\n      if(queryParams.orderBy == 'key')\n        query = query.orderByKey();\n      else if(queryParams.orderBy)\n      {\n        if(queryParams.orderBy.length > 0)\n          query = query.orderByChild(queryParams.orderBy);\n      }\n\n      if(queryParams.order == 'asc'){\n        query = query.limitToFirst(queryParams.paging);\n\n        if(queryParams.lastKey)\n          query = query.startAt(queryParams.lastKey);\n      }\n\n      if(queryParams.order == 'desc'){\n        //alert('dd');\n        query = query.limitToLast(queryParams.paging);\n\n        if(queryParams.lastKey)\n          query = query.endAt(queryParams.lastKey);\n      }\n\n      query.once('value')\n      .then(callback ? callback : (r) => {})\n      .catch(error ? error : (e) => {});\n\n    }\n\n}\n\nexport default DB_operations;\n",
+    "static": true,
+    "longname": "/Users/touchon/Desktop/TCABS/DEV_BIT/pages/util/dbops.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "qs",
+    "memberof": "pages/util/dbops.js",
+    "static": true,
+    "longname": "pages/util/dbops.js~qs",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/dbops.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "class",
+    "name": "DB_operations",
+    "memberof": "pages/util/dbops.js",
+    "static": true,
+    "longname": "pages/util/dbops.js~DB_operations",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/dbops.js",
+    "importStyle": "DB_operations",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 67,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "db",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#db",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "method",
+    "name": "addUser",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#addUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "userObject",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 88,
+    "kind": "method",
+    "name": "success",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#success",
+    "access": "public",
+    "description": null,
+    "lineNumber": 60,
+    "undocument": true,
+    "params": [
+      {
+        "name": "title",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "msg",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 89,
+    "kind": "method",
+    "name": "error",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#error",
+    "access": "public",
+    "description": null,
+    "lineNumber": 68,
+    "undocument": true,
+    "params": [
+      {
+        "name": "title",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "msg",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 90,
+    "kind": "method",
+    "name": "redirect",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#redirect",
+    "access": "public",
+    "description": null,
+    "lineNumber": 77,
+    "undocument": true,
+    "params": [
+      {
+        "name": "location",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 91,
+    "kind": "method",
+    "name": "create_user",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#create_user",
+    "access": "public",
+    "description": null,
+    "lineNumber": 81,
+    "undocument": true,
+    "params": [
+      {
+        "name": "username",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pwd",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "log",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#log",
+    "access": "public",
+    "description": null,
+    "lineNumber": 85,
+    "undocument": true,
+    "params": [
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 93,
+    "kind": "method",
+    "name": "listen_user_events",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#listen_user_events",
+    "access": "public",
+    "description": null,
+    "lineNumber": 89,
+    "undocument": true,
+    "params": [
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 94,
+    "kind": "method",
+    "name": "get_user_info",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#get_user_info",
+    "access": "public",
+    "description": null,
+    "lineNumber": 95,
+    "undocument": true,
+    "params": [
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "get_current_user",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#get_current_user",
+    "access": "public",
+    "description": null,
+    "lineNumber": 104,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "get_user_token",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#get_user_token",
+    "access": "public",
+    "description": null,
+    "lineNumber": 111,
+    "undocument": true,
+    "params": [
+      {
+        "name": "refresh",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "getData",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#getData",
+    "access": "public",
+    "description": null,
+    "lineNumber": 115,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "getDataWithKey",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#getDataWithKey",
+    "access": "public",
+    "description": null,
+    "lineNumber": 121,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "queryParams",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "method",
+    "name": "get_user_type",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#get_user_type",
+    "access": "public",
+    "description": null,
+    "lineNumber": 136,
+    "undocument": true,
+    "params": [
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 100,
+    "kind": "method",
+    "name": "sign_out",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#sign_out",
+    "access": "public",
+    "description": null,
+    "lineNumber": 151,
+    "undocument": true,
+    "params": [
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 101,
+    "kind": "method",
+    "name": "sign_in",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#sign_in",
+    "access": "public",
+    "description": null,
+    "lineNumber": 162,
+    "undocument": true,
+    "params": [
+      {
+        "name": "username",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pwd",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "save_data",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#save_data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 166,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 103,
+    "kind": "method",
+    "name": "uploadStudents",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#uploadStudents",
+    "access": "public",
+    "description": null,
+    "lineNumber": 172,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "studentsData",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "studentsProfileData",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "disableUser",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#disableUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 198,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "uid",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "status",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 105,
+    "kind": "method",
+    "name": "query",
+    "memberof": "pages/util/dbops.js~DB_operations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/dbops.js~DB_operations#query",
+    "access": "public",
+    "description": null,
+    "lineNumber": 224,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "queryParams",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 106,
+    "kind": "file",
+    "name": "pages/util/errors/errors.js",
+    "content": "import { message } from 'antd';\n\nclass PropertyRequiredError extends Error {\n  constructor(property) {\n    super(\"No property: \" + property);\n    this.property = property;\n  }\n}\n\nexport { PropertyRequiredError }\n\nexport default class CustomError extends Error {\n  constructor(message) {\n    super(message);\n    this.name = this.constructor.name;\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/touchon/Desktop/TCABS/DEV_BIT/pages/util/errors/errors.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 107,
+    "kind": "class",
+    "name": "CustomError",
+    "memberof": "pages/util/errors/errors.js",
+    "static": true,
+    "longname": "pages/util/errors/errors.js~CustomError",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/errors/errors.js",
+    "importStyle": "CustomError",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ]
+  },
+  {
+    "__docId__": 108,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "pages/util/errors/errors.js~CustomError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/errors/errors.js~CustomError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "member",
+    "name": "name",
+    "memberof": "pages/util/errors/errors.js~CustomError",
+    "static": false,
+    "longname": "pages/util/errors/errors.js~CustomError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "class",
+    "name": "PropertyRequiredError",
+    "memberof": "pages/util/errors/errors.js",
+    "static": true,
+    "longname": "pages/util/errors/errors.js~PropertyRequiredError",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/errors/errors.js",
+    "importStyle": "{PropertyRequiredError}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ]
+  },
+  {
+    "__docId__": 111,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "pages/util/errors/errors.js~PropertyRequiredError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "pages/util/errors/errors.js~PropertyRequiredError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "member",
+    "name": "property",
+    "memberof": "pages/util/errors/errors.js~PropertyRequiredError",
+    "static": false,
+    "longname": "pages/util/errors/errors.js~PropertyRequiredError#property",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "pages/util/util.js",
+    "content": "/**\n * Created by Ravi on 23/9/17.\n */\nfunction validateEmail(email) {\n     //var re = /^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/;\n     //var re = /^(([^<>()\\[\\]\\.,;:\\s@\\\"]+(\\.[^<>()\\[\\]\\.,;:\\s@\\\"]+)*)|(\\\".+\\\"))@(([^<>()\\.,;\\s@\\\"]+\\.{0,1})+[^<>()\\.,;:\\s@\\\"]{2,})$/;\n     //var re = /^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$/;\n\n     // this allow swinburne email\n     var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$/;\n\n     // this allows symbol +\n     // var re = /^\\s*[\\w\\-\\+_]+(\\.[\\w\\-\\+_]+)*\\@[\\w\\-\\+_]+\\.[\\w\\-\\+_]+(\\.[\\w\\-\\+_]+)*\\s*$/;\n     return re.test(String(email).toLowerCase());\n }\n\nfunction checkPassword(str)\n{\n // at least one number, one lowercase and one uppercase letter\n // at least six characters\n var re = /(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;\n return re.test(str);\n}\n\nfunction b64EncodeUnicode(str) {\n    // first we use encodeURIComponent to get percent-encoded UTF-8,\n    // then we convert the percent encodings into raw bytes which\n    // can be fed into btoa.\n    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,\n        function toSolidBytes(match, p1) {\n            return String.fromCharCode('0x' + p1);\n    }));\n}\n\nfunction b64DecodeUnicode(str) {\n    // Going backwards: from bytestream, to percent-encoding, to original string.\n    return decodeURIComponent(atob(str).split('').map(function(c) {\n        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);\n    }).join(''));\n}\n\nfunction PhoneNumberValidate(phoneNumber){\n  // This is our bread and butter expression\n  //var phoneExpression = /^\\({0,1}((0|\\+61)(2|4|3|7|8)){0,1}\\){0,1}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{1}(\\ |-){0,1}[0-9]{3}$/;\n  //var phoneExpression = /^\\({0,1}((0|61|\\+61)(4|7|8)){1}\\){0,1}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{1}(\\ |-){0,1}[0-9]{3}$/;\n  var phoneExpression = /^\\({0,1}((0|61|\\+61)(4|7|8)){1}\\){0,1}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{1}(\\ |-){0,1}[0-9]{3}$/;\n  if (phoneNumber.match(phoneExpression))\n      return true;\n  else\n      return false;\n\n}\n\nfunction formatPhoneNumber(phoneNumber){\n    /*\n    Tests phone number: 0424911988\n    Tests phone number: +61410311129\n    Tests phone number: (04)10311129\n  \tTests phone number: 0411 234 567\n    Tests phone number: 61410311129\n    */\n    var tempNumber = phoneNumber\n    switch (tempNumber.substring(0, 2)) {\n      case \"04\":\n        tempNumber = tempNumber.replace(\"04\", \"+614\");\n        break;\n      case \"+6\":\n        tempNumber.replace(\"+6\", \"+6\");\n        break;\n      case \"(0\":\n        tempNumber.replace(\"(04)\", \"+614\");\n        break;\n      case \"61\":\n        tempNumber.replace(\"614\", \"+614\");\n        break;\n      default:\n\n    }\n\n    if(tempNumber.substring(0, 1) == \"4\")\n      tempNumber = '0'+tempNumber;\n\n    tempNumber = tempNumber.replace(\" \", \"\");\n    return tempNumber;\n}\n\n\n/*\n    Recursively merge properties and return new object\n    obj1 &lt;- obj2 [ &lt;- ... ]\n*/\nfunction mergeObjs () {\n    var dst = {}\n        ,src\n        ,p\n        ,args = [].splice.call(arguments, 0)\n    ;\n\n    while (args.length > 0) {\n        src = args.splice(0, 1)[0];\n        if (toString.call(src) == '[object Object]') {\n            for (p in src) {\n                if (src.hasOwnProperty(p)) {\n                    if (toString.call(src[p]) == '[object Object]') {\n                        dst[p] = merge(dst[p] || {}, src[p]);\n                    } else {\n                        dst[p] = src[p];\n                    }\n                }\n            }\n        }\n    }\n\n   return dst;\n}\n\nfunction removeKey(obj , key){\n   let objdup = obj;\n   delete objdup[key];\n   return objdup;\n}\n\nvar getIndexOfAttrInObj = function(array, attr, value) {\n    for(var i = 0; i < array.length; i++) {\n        if(array[i].hasOwnProperty(attr) && array[i][attr] === value) {\n            return i;\n        }\n    }\n    return -1;\n}\n\nexport {\n  validateEmail,\n  checkPassword,\n  b64DecodeUnicode,\n  formatPhoneNumber,\n  PhoneNumberValidate,\n  mergeObjs,\n  removeKey,\n  getIndexOfAttrInObj\n}\n",
+    "static": true,
+    "longname": "/Users/touchon/Desktop/TCABS/DEV_BIT/pages/util/util.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "function",
+    "name": "b64EncodeUnicode",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~b64EncodeUnicode",
+    "access": "public",
+    "export": false,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "function",
+    "name": "validateEmail",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~validateEmail",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{validateEmail}",
+    "description": "Created by Ravi on 23/9/17.",
+    "lineNumber": 4,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "checkPassword",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~checkPassword",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{checkPassword}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "b64DecodeUnicode",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~b64DecodeUnicode",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{b64DecodeUnicode}",
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "formatPhoneNumber",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~formatPhoneNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{formatPhoneNumber}",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "params": [
+      {
+        "name": "phoneNumber",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "PhoneNumberValidate",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~PhoneNumberValidate",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{PhoneNumberValidate}",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "params": [
+      {
+        "name": "phoneNumber",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "function",
+    "name": "mergeObjs",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~mergeObjs",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{mergeObjs}",
+    "description": null,
+    "lineNumber": 92,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 121,
+    "kind": "function",
+    "name": "removeKey",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~removeKey",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{removeKey}",
+    "description": null,
+    "lineNumber": 117,
+    "undocument": true,
+    "params": [
+      {
+        "name": "obj",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "key",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 122,
+    "kind": "function",
+    "name": "getIndexOfAttrInObj",
+    "memberof": "pages/util/util.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "pages/util/util.js~getIndexOfAttrInObj",
+    "access": "public",
+    "export": true,
+    "importPath": "touchonadmin/pages/util/util.js",
+    "importStyle": "{getIndexOfAttrInObj}",
+    "description": null,
+    "lineNumber": 123,
+    "undocument": true,
+    "params": [
+      {
+        "name": "array",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "attr",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# **TCABS**\n\n\n# run ESDoc\n./node_modules/.bin/esdoc\n\n# see a documentation\nopen ./docs/index.html\n\n\nA boilerplate with [NextJS](https://github.com/zeit/next.js/) + [ANT Design](ant.design) + Redux + [Styled JSX with SCSS](https://www.npmjs.com/package/@zeit/next-sass)\n\n#### [DEMO](https://fifi-ashinga.herokuapp.com/)\n\nWith a lot of research and experimentation NextJS is the best framework to work with React JS ( Server side rendering + Code Splitting ) and better performance.\n\nwhereas working with [React Starter Kit](https://github.com/kriasoft/react-starter-kit) doesn't give better output for production ( like Code Splitting ) ( please share if you know how to do it ).\n\n### What it has\n\n- [x] SCSS\n- [x] Seperate SCSS files\n- [x] Integrate ANT design\n- [x] Express JS\n- [x] Code Compression ( Extreme performance )\n\n\n### Things to do\n\n- [ ] Integrate Redux\n\n\n\nMany other UI frameworks like Grommet, Materialise CSS etc are doing a good job. I see ANT Design is much more sophisticated.\n\n### How\n\n1. Development ```npm run dev```\n2. Build & Run ```npm run build``` &&  ```npm run start```\n\n### Doc\n\n#### 1. ANT Design imports optimisation ( to reduce build size )\n\nReplace\n```\nimport { DatePicker, Avatar, Badge } from 'antd';\n```\nwith\n```\nimport DatePicker from 'antd/lib/date-picker';\nimport Avatar from 'antd/lib/avatar';\nimport Badge from 'antd/lib/badge';\n```\n\nwith that build changed from **1.4MB to 560KB**\n\n#### 2. ANT Design CSS import\n\nInstead statical import of full css  like this\n```\nimport stylesheet from 'antd/dist/antd.min.css';\n```\nUse\n```\nimport stylesheet from 'antd/lib/style/index.css'\nimport Badge_CSS from 'antd/lib/badge/style/index.css'\n```\n\n\n### User Documentation\n\n### Developer Documentation\nstep 1: build sources\n```\n./node_modules/.bin/esdoc\n\n```\nstep 2: Run index files\n```\nopen ./docsDeveloper/index.html\n```\n",
+    "longname": "/Users/touchon/Desktop/TCABS/DEV_BIT/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"touchonadmin\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Boilerplate with Next JS, ANT Design, Redux & SCSS\",\n  \"main\": \"index.js\",\n  \"dependencies\": {\n    \"@zeit/next-css\": \"^0.1.5\",\n    \"@zeit/next-sass\": \"^0.1.1\",\n    \"antd\": \"^3.2.3\",\n    \"axios\": \"^0.18.0\",\n    \"babel-plugin-inline-import\": \"^2.0.6\",\n    \"compression\": \"^1.7.2\",\n    \"css-loader\": \"^0.28.11\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"express\": \"^4.16.2\",\n    \"file-loader\": \"^1.1.11\",\n    \"firebase\": \"^4.11.0\",\n    \"firebase-admin\": \"^5.11.0\",\n    \"is_js\": \"^0.9.0\",\n    \"jest-html-reporter\": \"^2.2.0\",\n    \"moment\": \"^2.22.0\",\n    \"next\": \"^5.0.0\",\n    \"next-redux-wrapper\": \"^1.3.5\",\n    \"node-sass\": \"^4.7.2\",\n    \"papaparse\": \"^4.3.7\",\n    \"postcss-loader\": \"^2.1.3\",\n    \"qs\": \"^6.5.1\",\n    \"react\": \"^16.2.0\",\n    \"react-dom\": \"^16.2.0\",\n    \"reqwest\": \"^2.0.5\",\n    \"style-loader\": \"^0.20.3\",\n    \"styled-jsx\": \"^2.2.5\",\n    \"styled-jsx-plugin-sass\": \"^0.2.3\",\n    \"url-loader\": \"^1.0.1\",\n    \"xhr2\": \"^0.1.4\"\n  },\n  \"devDependencies\": {\n    \"babel-jest\": \"^22.4.3\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-react\": \"^6.24.1\",\n    \"jest\": \"^22.4.3\",\n    \"react-test-renderer\": \"^16.3.1\"\n  },\n  \"jest\": {\n    \"testResultsProcessor\": \"./node_modules/jest-html-reporter\"\n  },\n  \"scripts\": {\n    \"old_dev\": \"next\",\n    \"old_build\": \"next build\",\n    \"old_start\": \"next start -p $PORT\",\n    \"dev\": \"node server.js\",\n    \"build\": \"next build\",\n    \"start\": \"NODE_ENV=production node server.js -p $PORT\",\n    \"heroku-postbuild\": \"next build\",\n    \"test\": \"jest\"\n  },\n  \"author\": \"kesanam.ravi@gmail.com\",\n  \"license\": \"ISC\"\n}\n",
+    "longname": "/Users/touchon/Desktop/TCABS/DEV_BIT/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

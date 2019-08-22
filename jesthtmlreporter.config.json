@@ -1,0 +1,6 @@
+{
+    "pageTitle": "TCABS Test Report",
+    "outputPath": "test-report/index.html",
+    "includeFailureMsg": false,
+    "logo": "../static/images/logo.svg"
+}

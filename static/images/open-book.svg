@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="362px" viewBox="0 0 512 362" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>open-book</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="open-book" fill="#8E44AD" fill-rule="nonzero">
+            <path d="M308.364,0.636 C289.085,0.636 273.455,16.266 273.455,35.545 L273.455,326.454 C273.455,307.175 289.085,291.545 308.364,291.545 L442.182,291.545 L442.182,0.636 L308.364,0.636 Z" id="Shape"></path>
+            <path d="M203.636,0.636 L69.818,0.636 L69.818,291.545 L203.636,291.545 C222.915,291.545 238.545,307.175 238.545,326.454 L238.545,35.545 C238.545,16.266 222.915,0.636 203.636,0.636 Z" id="Shape"></path>
+            <path d="M477.091,35.545 L477.091,326.454 L343.273,326.454 C323.994,326.454 308.364,342.084 308.364,361.363 L512,361.363 L512,35.545 L477.091,35.545 Z" id="Shape"></path>
+            <path d="M168.727,326.455 L34.909,326.455 L34.909,35.545 L0,35.545 L0,361.363 L203.636,361.363 C203.636,342.085 188.006,326.455 168.727,326.455 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

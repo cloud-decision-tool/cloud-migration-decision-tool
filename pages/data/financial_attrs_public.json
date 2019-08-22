@@ -1,0 +1,335 @@
+{
+  "attrs" : [
+    {
+      "name" : {
+        "name" : "Solution Architecture Public",
+        "category" : "Architecture & PM"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : "Project Management",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : null,
+        "category" : "Connectivity"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : null,
+        "category" : "Design & Implement (PROD)"
+      },
+      "costs" : {
+        "upfront" : 1295000,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : "Vblock 350 Frame",
+        "category" : "Design & Implement (DR)"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 29450,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Virtual Blades",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 2450,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Physical Blades",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 1150,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Storage",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 7450,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Vblock 350 Frame",
+        "category" : "Compute & Storage (DR)"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 7450,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Virtual Blades",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 2450,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Physical Blades",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 1150,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Storage",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 7450,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Ingress & Egress Fees",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : "Monitoring & Management",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 25000,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Power",
+        "category" : "Data Centre"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : "Cooling",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : "Floor Space",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : "Platform engineering",
+        "category" : "Lifecycle Management"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 1200,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Incident management & remediation",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : "Incident management & remediation",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 1200,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Platform migration",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 1200,
+        "monthly" : 0,
+        "endofcontract" : 1200
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : "Predeployment validation lab",
+        "category" : null
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 0,
+        "endofcontract" : 0
+      },
+      "control" : false
+    },
+    {
+      "name" : {
+        "name" : null,
+        "category" : "Backup"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 128.57,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : null,
+        "category" : "Contract Administration"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 500,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    },
+    {
+      "name" : {
+        "name" : null,
+        "category" : "Audit"
+      },
+      "costs" : {
+        "upfront" : 0,
+        "monthly" : 300,
+        "endofcontract" : 0
+      },
+      "control" : true,
+      "min" : 1,
+      "max" : 100
+    }
+
+  ]
+}

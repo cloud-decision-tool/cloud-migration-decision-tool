@@ -1,0 +1,166 @@
+{
+  "DUCM" : [
+  {
+    "question" : "Higher Application Availability ?",
+    "subhelp": "Higher application availability refers to application availability > 99.95%",
+    "options": [
+        { "text" :"Required", "answer": "private", "weightage": 80 },
+        { "text" :"Optional", "answer": "public", "weightage": 20 }
+      ],
+    "force" : true,
+    "help": "Availability of the application depends upon the architecture also. Monolithic architecture usually requires Higher availability..",
+    "video" : "Jz_nzZQD9Cw"
+  },
+  {
+    "question" : "Business Service Availability ?",
+    "subhelp": "It refers, during the time of disaster recovery event, whether the availability of the application services is critically required.",
+    "options": [
+        { "text" :"Required", "answer": "private", "weightage": 80 },
+        { "text" :"Optional", "answer": "public", "weightage": 20 }
+      ],
+    "force" : true,
+    "help": "Business service availability refers to the hours of service for which the business process must be available to the users of the application during the time disaster recovery. Requirement of RTO(Recovery time objective)4 hours to 8 hours and RPO(Recovery Point Objective) 0 hours to 2 hours requires business service availability during the times of outage and data loss. If this is the case with your application, then choose option (”required)"
+  },
+  {
+    "question" : "Long running business process ?",
+    "subhelp": "Is the application required to support long running business process where state needs to be persistent?",
+    "options": [
+        { "text" :"Required", "answer": "private", "weightage": 80 },
+        { "text" :"Optional", "answer": "public", "weightage": 20 }
+      ],
+    "force" : false,
+    "help": "Long running process refers to where the process is in wait state most of the time. If the application needs to provide services that has to support long business process where state needs to maintained, then choose (required)"
+  },
+  {
+    "question" : "Application usage?",
+    "subhelp": " ",
+    "options": [
+        { "text" :"Required", "answer": "private", "weightage": 80 },
+        { "text" :"Optional", "answer": "public", "weightage": 20 }
+      ],
+    "force" : false,
+    "help": "If the usage of the application is static throughout the year, then choose (required)."
+  },
+  {
+    "question" : "Regulatory Requirements ?",
+    "subhelp": "Compliance with any government/non-government regulatory requirements ( Payment Card Industry(PCI)/Australian Securities & Investments Commission (ASIC) /Australian Government Information Security Manual (ISM) AS/NZS ISO/IEC 27001:2006, AS/NZS ISO 9000, FIPS 140-2 , Australian Earthquake Loading Standard AS1170, APRA certification etc)",
+    "options": [
+        { "text" :"Required", "answer": "private", "weightage": 80 },
+        { "text" :"Optional", "answer": "public", "weightage": 20 }
+      ],
+    "force" : true,
+    "help": "Please refer to the legal and official requirements compliance conditions for your application. If there is any regulatory body involved in the business processes, then choose (required)"
+  },
+  {
+    "question" : "Flexible Operating Cost",
+    "subhelp": "Only required if the application operating costs are substantially higher during peak periods.",
+    "options": [
+        { "text" :"Required", "answer": "private", "weightage": 80 },
+        { "text" :"Optional", "answer": "public", "weightage": 20 }
+      ],
+    "force" : false,
+    "help": "If the rise in campaigns or incentives generates more than 20% traffic than general traffic, then choose(required)"
+  },
+  {
+    "question" : "High Performance ?",
+    "subhelp" : "High performance refers to the performance bandwidth that is required to be the same during peak times",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : false,
+    "help": "If the peak of peak transaction rate score is more than>=3, on a scale from 0 to 5, then choose (required) This means that even during the peak times, users need to be provided with same response time as during usual business traffic regardless of traffic at that point of time."
+  },
+  {
+    "question" : "Cloud native architecture of the application ",
+    "subhelp" : "",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : true,
+    "help": "cloud native architecture of the application has distributed management and orchestration. If the architecture is cloud native, then choose (required) otherwise, if the application is monolithic, in which the user interface and data access code are combined into a single program from a single platform and application is self-contained, and independent from other computing applications, then choose (optional)"
+  },
+  {
+    "question" : "Security Components",
+    "subhelp" : " ",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : false,
+    "help": "Choose(required) if the application critically needs physical appliances for security, otherwise, if the virtual appliances are suitable, then choose(optional)"
+  },
+  {
+    "question" : "Data Security Classification ?",
+    "subhelp" : " ",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : true,
+    "help": "If the data is classified as protected, confidential, secret, etc then choose(required), otherwise if data is unclassified, then choose(optional)"
+  },
+  {
+    "question" : "Network Global Load Balancing?",
+    "subhelp" : " ",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : true,
+    "help": "It is only required if high availability of the application is to be carried out through redundancy."
+  },
+  {
+    "question" : "Connectivity to MPLS Server",
+    "subhelp" : " ",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : true,
+    "help": "Access to the load balancer will be either through connectivity to a private MPLS network or internet Virtual Private Network. If data cannot go outside an Enterprise’s trusted zone, then choose(required )however, if data is permitted to exit the trusted zone, then choose(optional)."
+  },
+  {
+    "question" : "Hypervisor Need",
+    "subhelp" : " ",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : true,
+    "help": " Nothing "
+  },
+  {
+    "question" : "Enterprise Control ?",
+    "subhelp" : "High",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : true,
+    "help": "If the organisation want to manage the data centre itself or if it has mission critical applications and does not want anyone outside the company to control it, then it is recommended you choose (required)"
+  },
+  {
+    "question" : "Data Classification ?",
+    "subhelp" : "If data needs to be classified other than (publicly available)",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : true,
+    "help": "If the data is classified as publicly available, then choose (optional), if not, then choose(required)"
+  },
+  {
+    "question" : "Technology standardisation ?",
+    "subhelp" : " ",
+    "options": [
+        { "text" :"Medium", "answer": "private", "weightage": 40 },
+        { "text" :"High", "answer": "public", "weightage": 60 }
+      ],
+    "force" : false,
+    "help": "Whether or not the application is suited to a standardised technology environment, choose(optional) or whether there are unique or non-standard application requirements or constraints, choose(required)"
+  }
+
+  ]
+}

@@ -1,0 +1,129 @@
+<html><head><meta charset="utf-8"/><title>CDT Test Report</title><style type="text/css">html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+body {
+	padding: 1rem;
+	font-size: 0.85rem;
+}
+header {
+	display: flex;
+	align-items: center;
+}
+#title {
+	margin: 0;
+	flex-grow: 1;
+}
+#logo {
+	height: 4rem;
+}
+#timestamp {
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+#summary {
+	color: #999;
+	margin-bottom: 1rem;
+}
+.suite-info {
+	padding: 1rem;
+	background-color: #eee;
+	border-bottom: 2px solid #999;
+	color: #999;
+	display: flex;
+	align-items: center;
+}
+.suite-info .suite-path {
+	font-weight: bold;
+	word-break: break-all;
+	flex-grow: 1;
+}
+.suite-info .suite-time {
+	margin-left: 0.5rem;
+	padding: 0.2rem 0.3rem;
+	font-size: 0.75rem;
+}
+.suite-info .suite-time.warn {
+	background-color: #D8000C;
+	color: #fff;
+}
+.suite-table {
+	width: 100%;
+	font-size: 0.85rem;
+	margin-bottom: 1em;
+}
+.suite-table td {
+	padding: 0.5rem;
+}
+.suite-table tr.passed {
+	background-color: #DFF2BF;
+	color: #4F8A10;
+}
+.suite-table tr.pending {
+	background-color: #FEEFB3;
+	color: #9F6000;
+}
+.suite-table tr.failed {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+.suite-table td {
+	font-size: 0.85rem;
+	border-bottom: 1px solid #aaa;
+	vertical-align: top;
+}
+.suite-table td.suite {
+	font-weight: bold;
+	width: 20%;
+}
+.suite-table td.test {
+	font-style: italic;
+	width: 60%;
+}
+.suite-table td.test .failureMsg {
+	font-size: 1rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.suite-table td.result {
+	width: 20%;
+	text-align: right;
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #efefef;
+}
+.suite-consolelog-header {
+	font-weight: bold;
+}
+.suite-consolelog-item {
+	padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+	margin: 0;
+}
+.suite-consolelog-item-origin {
+	color: #777;
+	font-weight: bold;
+}
+.suite-consolelog-item-message {
+	color: #000;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+}
+</style></head><header><h1 id="title">CDT Test Report</h1><img id="logo" src="../static/images/logo.svg"/></header><div id="metadata-container"><div id="timestamp">Start: 2018-09-20 13:03:32</div><div id="summary">
+				26 tests --
+				6 passed /
+				20 failed /
+				0 pending
+			</div></div><div class="suite-info"><div class="suite-path">/Users/touchon/Desktop/Swinburne/ARP/Code/tests/passwordValidate.test.js</div><div class="suite-time">0.484s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="failed"><td class="suite"/><td class="test">Tests phone number: kitty</td><td class="result">failed</td></tr><tr class="passed"><td class="suite"/><td class="test">Tests phone number: Susan53</td><td class="result">passed in 0.001s</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: jelly22fi$h</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: smellycat</td><td class="result">failed</td></tr><tr class="passed"><td class="suite"/><td class="test">Tests phone number: a11Blacks</td><td class="result">passed in 0s</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: &amp;ebay.44</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: deltagamm@</td><td class="result">failed</td></tr><tr class="passed"><td class="suite"/><td class="test">Tests phone number: sn00pdoggyd0G</td><td class="result">passed in 0s</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: i7ovemydog!!</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: d0gsaremybestfr13nds</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: Karm@beatsDogm@</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests phone number: !usher</td><td class="result">failed</td></tr></table><div class="suite-info"><div class="suite-path">/Users/touchon/Desktop/Swinburne/ARP/Code/tests/emailValidate.test.js</div><div class="suite-time">0.079s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite"/><td class="test">Tests Email: niceandsimple@example.com</td><td class="result">passed in 0.002s</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: disposable.style.email.with+symbol@example.com</td><td class="result">failed</td></tr><tr class="passed"><td class="suite"/><td class="test">Tests Email: other.email-with-dash@example.com</td><td class="result">passed in 0s</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: "much.more unusual"@example.com</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: "very.unusual.@.unusual.com"@example.com</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: " "@example.org</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: üñîçøðé@example.com</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: Abc.example.com</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: A@b@c@example.com</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: this still"not\allowed@example.com</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: admin@mailserver1</td><td class="result">failed</td></tr><tr class="failed"><td class="suite"/><td class="test">Tests Email: "very.(),:;&lt;&gt;[]".VERY."very@\ "very".unusual"@strange.example.com</td><td class="result">failed</td></tr><tr class="passed"><td class="suite"/><td class="test">Tests Email: 101028320@student.swin.edu.au</td><td class="result">passed in 0.001s</td></tr></table><div class="suite-info"><div class="suite-path">/Users/touchon/Desktop/Swinburne/ARP/Code/tests/API_student.test.js</div><div class="suite-time">0.042s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="failed"><td class="suite"/><td class="test">Tests phone number: kitty</td><td class="result">failed</td></tr></table></html>

@@ -1,0 +1,111 @@
+// @import "../../node_modules/antd/lib/date-picker/style/css";
+//@import 'antd/lib/date-picker/style';
+// @import '../../node_modules/antd/lib/date-picker/style';
+// @import '../../node_modules/antd/lib/date-picker/style/index.css';
+
+//latest
+
+// @import '../../node_modules/antd/lib/date-picker/style/index';
+// @import 'antd/dist/antd.css';
+// @import '../../node_modules/antd/dist/antd.css';
+// @import "~antd/dist/atnd.min.css";
+@import "gradient";
+
+*{
+  padding:0; margin:0;
+  font-family: 'Montserrat', sans-serif;
+}
+.clearfix{
+  clear: both;
+}
+$color1: #933EC5;
+$color2: rgba(212,32,32,1);
+
+$colorGreen : #3abd3a;
+
+
+//----------- COLORS --------------
+.grey{
+  color : grey;
+}
+.darkgrey{
+  color : darkgrey;
+}
+.dodger{
+  color : #19B5FE;
+}
+.ebony{
+  color : #22313F;
+}
+.color1 {
+  color: $color1;
+}
+.color2 {
+  color: $color2;
+}
+
+.bgGreen, .bgGreen:hover{
+  background-color: $colorGreen !important;
+    border-color: $colorGreen !important;
+}
+
+.pointer {  cursor:  pointer; }
+
+
+//-------------- MARGINS -----------
+.mar25{ margin: 25px; }
+.marTop30 { margin-top: 30px}
+.marBot30 { margin-bottom: 30px}
+.marBot25 { margin : 0 0 25px 0}
+.marTB30 { margin: 30px 20px; }
+.marLR10 { margin: 0px 10px; }
+.marLR25 { margin: 0px 25px; }
+
+.left { float : left !important;}
+.right { float : right !important}
+.bold { font-weight: bold}
+
+.center { text-align: center;}
+.alignCenter { margin : 0 auto }
+
+
+//-------------- WIDTHS --------------
+.w100p{ width : 100% }
+
+.wh100px { width: 100px; height : 100px;}
+
+//-------------- SPECIAL CLASSES -----------
+.logo { min-width: 120px; max-width: 250px}
+
+.login-form { margin-top: 120px}
+
+//-------------- MENUS --------------
+.logoff{
+  & a{ color: $color2 !important; }
+}
+.menu-custom{
+  border-bottom: none;
+    & li{
+        padding: 16px 20px;
+        border-bottom: none !important;
+    }
+    & li:hover{
+      border-bottom: none !important;
+    }
+    & a{
+      font-weight: bold;
+    }
+    & a:hover, & li.ant-menu-item-selected a{
+      color: $color1 !important;
+    }
+}
+
+
+//-------------- PRICINGS ---------------
+
+.table1 {
+  @include linear-gradient(#6bb9f0, #2c82c9);
+}
+.table2 {
+  @include linear-gradient(#36d7b7, #3fc380);
+}
