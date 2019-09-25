@@ -92,6 +92,8 @@ export default class extends Component{
   constructor(props){
       super(props);
 
+      this.onContinueSelected = this.onContinueSelected.bind(this);
+
       this.state = {
         choice : -1,
         preset : -1,
@@ -159,6 +161,10 @@ export default class extends Component{
       }]
   }
 
+  onContinueSelected = () => {
+    this.setState({ analysis : true });
+  }
+
   updateWithPreset = (preset) =>{
     let Tdata = this.state.tableData;
     let TNData = [];
@@ -218,21 +224,7 @@ export default class extends Component{
             //   <CloudReview />
             // </div>
             <div>
-              <CloudReview/>
-              <Row type="flex" justify="center">
-              <Col>
-                <Button
-                  loading={false}
-                  justify="center"
-                  style={sm([ styles.bggreen, styles.w200 ])}
-                  onClick={() => {
-                    this.setState({ analysis : true });
-                  }}
-                >
-                  Continue
-                </Button>
-              </Col>
-              </Row>
+              <CloudReview onContinueSelected={this.onContinueSelected}/>              
             </div>
           }
           {this.state.preset >= 0 && !this.state.analysis && this.props.analysis.toLowerCase() === "private" &&

@@ -1,8 +1,9 @@
 import React from "react";
 import CloudResources from "./cloudResources";
 import PricingReview from "./pricingReview";
-import Button from "antd/es/button";
-import { Typography, Row, Col } from "antd";
+import {sm} from "../../pages/util/util";
+import styles from "../../styles/styles";
+import { Typography, Row, Col, Button } from "antd";
 import axios from "axios";
 
 const { Title } = Typography;
@@ -92,8 +93,6 @@ export default class CloudReview extends React.Component {
       awsCalculateData: awsResponse.data,
       isLoading: false
     });
-    console.log(awsResponse.data);
-    console.log(response.data);
   }
 
   onStorageSelected = ({ type, value, os }) => {
@@ -171,7 +170,7 @@ export default class CloudReview extends React.Component {
 
     return (
       <div className="App">
-        <Title level={2} style={{textAlign : 'center'}}>Choose your cloud resources</Title>
+        <Title level={2} style={{ textAlign: 'center' }}>Choose your cloud resources</Title>
         <Row style={{ marginTop: 40 }}>
           <Col span={12}>
             <Title level={4}>Window</Title>
@@ -199,6 +198,18 @@ export default class CloudReview extends React.Component {
         />
 
         <Row style={{ marginBottom: 40 }}></Row>
+        <Row type="flex" justify="center">
+          <Col>
+            <Button
+              loading={false}
+              justify="center"
+              style={sm([styles.bggreen, styles.w200])}
+              onClick={this.props.onContinueSelected}
+            >
+              Continue
+                </Button>
+          </Col>
+        </Row>
       </div>
     );
   }
