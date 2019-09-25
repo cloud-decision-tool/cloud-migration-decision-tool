@@ -75,8 +75,6 @@ class SliderControl extends Component{
         max={this.props.max}
         onChange={(val)=>{
           this.setState({ initVal: val});
-          // NData[this.state.itemindex] = val;
-
           if(this.props.onSliderChanged)
             this.props.onSliderChanged(this.state.itemindex, val);
 
@@ -87,127 +85,6 @@ class SliderControl extends Component{
     )
   }
 }
-
-//
-// class Question extends Component{
-//   state={ active : false, current : null};
-//   render(){
-//     let {active} = this.state;
-//     let {item, index } = this.props;
-//     return (
-//       <Col key={index} sm={24} md={24} lg={24} style={sm([ styles.marBot14])}
-//         onClick={()=>{
-//           // this.setState({signup: true, chosenPlan: item },()=>{
-//           //   if(!this.state.user){
-//           //     setTimeout(()=>{
-//           //       this.setState({ signuploaded : true})
-//           //     }, 300)
-//           //   }
-//           //   else {
-//           //     message.info('You are already logged In');
-//           //
-//           //     //check if plan not purchased
-//           //     this.setState({ pricingModal : true})
-//           //   }
-//           // });
-//         }}
-//         >
-//         <div>
-//         <h3 style={sm([ styles.textBold, styles.fs18, styles.marTop20 ])}>{item.question} </h3>
-//         <div>
-//           {item.options.map((item,index)=>{
-//             return <OptionBtn text={item} active={this.state.currentOption !== null && this.state.currentOption == index ? true : false} onUserClicked={()=>{
-//               this.setState({ currentOption: index});
-//
-//               // if(this.props.onAnswered)
-//               // this.props.onAnswered()
-//
-//             }} />
-//           })}
-//         </div>
-//
-//         <Button onClick={()=>{
-//           if(this.props.onNext){
-//               if(this.state.currentOption == null)
-//               {
-//                 message.info(" Select an option ");
-//                 return;
-//               }
-//               else{
-//                   this.props.onNext(index, this.state.currentOption);
-//               }
-//
-//           }
-//
-//             //this.slider.slickGoTo((this.state.currentIndex+ 1))
-//         }} type="primary" size={'large'} style={sm([ {minWidth: 300, padding:14, height: 50, backgroundColor: '#96281b', borderColor: '#96281b', borderRadius: 30 }, styles.marRight20, styles.textwhite, styles.marTop40 ])}>Continue </Button>
-//
-//         </div>
-//       </Col>
-//     )
-//   }
-// }
-
-
-// const columns = [{
-//   title: '',
-//   dataIndex: 'name',
-//   key: 'name',
-//   width: 250,
-//   render: text => <div>
-//     {text.category? <h4><b>{text.category}</b></h4>: null}
-//     {text.name? <p>{text.name}</p>: null}
-//   </div>
-// }, {
-//   title: 'Quantity',
-//   dataIndex: 'age',
-//   key: 'age',
-//   width: 300,
-//   render: (text, param) => <div>
-//   <p>{JSON.stringify(text)} sdfsd</p>
-//     {param.control &&
-//       <SliderControl itemindex={param.itemindex} initVal={param.initVal? param.initVal : 1} min={param.min} max={param.max} />
-//     }
-//   </div>
-// },
-// {
-//  title: '1 Year',
-//  dataIndex: 'totalvalue',
-//  key: 'totalvalue',
-//  width : 100
-// },
-
-// {
-//   title: 'Action',
-//   key: 'action',
-//   width: 360,
-//   render: (text, record) => (
-//     <span>
-//       <a href="javascript:;">Action 一 {record.name}</a>
-//       <Divider type="vertical" />
-//       <a href="javascript:;">Delete</a>
-//       <Divider type="vertical" />
-//       <a href="javascript:;" className="ant-dropdown-link">
-//         More actions <Icon type="down" />
-//       </a>
-//     </span>
-//   ),
-// }
-
-// ];
-
-
-// const data = [];
-// for (let i = 1; i <= 10; i++) {
-//   data.push({
-//     key: i,
-//     name: 'John Brown',
-//     age: `${i}2`,
-//     address: `New York No. ${i} Lake Park`,
-//     description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
-//   });
-// }
-
 
 export default class extends Component{
 
@@ -220,21 +97,6 @@ export default class extends Component{
         bordered: false,
         loading: false,
         size: 'default',
-        // title: ()=>{ return <p>
-        //   <Affix offsetTop={20}>
-        //   <Button
-        //     type="primary"
-        //     style={sm([ styles.bggreen, styles.w200 ])}
-        //     onClick={() => {
-        //       this.setState({
-        //         top: this.state.top + 10,
-        //       });
-        //     }}
-        //   >
-        //     Continue
-        //   </Button>
-        // </Affix>
-        // </p>},
         categories : props.analysis.toLowerCase() =="private" ? Config.FinanceCategories.categories : Config.FinanceCategoriesPublic.categories,
         title : null,
         showHeader: true,
@@ -257,7 +119,6 @@ export default class extends Component{
           </Affix>
 
           </p>},
-        // footer : null,
         rowSelection: {},
         hasData: true,
 
@@ -301,19 +162,8 @@ export default class extends Component{
     let Tdata = this.state.tableData;
     let TNData = [];
     for(let i=0; i< Tdata.length; i++){
-
-      // console.log("DATA ",data[i].name)
         TNData[i] = data[i];
-        // TNData[i].key = i;
-        // TNData[i].itemindex = i;
-        // TNData[i].totalvalue = 0;
         TNData[i].initVal = this.state.categories[preset].preset[i];
-
-
-        // if(TNData[i].control)
-        // {
-        //     TNData[i].totalvalue = TNData[i].costs.upfront + TNData[i].costs.monthly + TNData[i].costs.endofcontract;
-        // }
     }
     console.log(" CCDATA ",TNData);
 
@@ -328,9 +178,6 @@ export default class extends Component{
     item.initVal = val;
     temp[itemindex] = item;
     this.setState({ tableData : temp });
-
-    // this.setState({ preset : true });
-    // console.log(" do this ",val, itemindex, this.state.tableData);
   }
 
   componentDidMount(){
@@ -338,16 +185,6 @@ export default class extends Component{
   }
 
   render(){
-
-    // let {choice, currentIndex} = this.state;
-    // let percent = parseInt(((currentIndex)/Config.DATA.length)*100);
-    //
-    // let { answers, surveyfinished } = this.state;
-    // let analysis = "";
-    // if(surveyfinished){
-    //
-    // }
-
     const state = this.state;
 
     if(!this.state.loaded)
@@ -374,8 +211,10 @@ export default class extends Component{
             </Row>
             </div>
           }
-
-          {this.state.preset >= 0 && !this.state.analysis &&
+          {this.state.preset >= 0 && !this.state.analysis && this.props.analysis.toLowerCase() === "public" &&
+            <p>You were reconmmeneded public cloud so you got nothing!</p>
+          }
+          {this.state.preset >= 0 && !this.state.analysis && this.props.analysis.toLowerCase() === "private" &&
           <Row type="flex" justify="center" align="top" style={sm([   ])}>
           <Col sm={24} md={23} lg={22}>
 
