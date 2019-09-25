@@ -10,7 +10,7 @@ async function getExchangeRate() {
     console.log(exchangeRate);
     return exchangeRate;
   } catch (error) {
-    console.log("Something has gone wrong while retrieving exchange rate");
+    throw new Error("Something has gone wrong while retrieving exchange rate")
   }
 }
 
@@ -64,9 +64,7 @@ async function getPricingForComputeEngineAzure(exchangeRate) {
     };
     return azurePrices;
   } catch (error) {
-    console.log(
-      "Something has gone wrong while retrieving compute engine pricing for Azure"
-    );
+    throw new Error("Something has gone wrong while retrieving compute engine pricing for Azure " + error);
   }
 }
 
@@ -91,10 +89,7 @@ async function getPricingForStorageAzure(exchangeRate) {
     };
     return storagePrice;
   } catch (error) {
-    console.log(
-      "Something has gone wrong while retrieving storage pricing for Azure" +
-        error
-    );
+    throw new Error("Something has gone wrong while retrieving storage pricing for Azure" + error);
   }
 }
 

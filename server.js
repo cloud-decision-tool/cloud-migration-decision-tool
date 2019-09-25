@@ -18,62 +18,70 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 app.prepare()
-.then(() => {
-  const server = express()
-  server.use(compression())
+  .then(() => {
+    const server = express()
+    server.use(compression())
 
-  server.use(cors());
+    server.use(cors());
 
-  server.get("/azure", async (req, res) => {
-    const data = await getAzureData();
-    res.json(data);
-  });
-  
-  server.get("/aws", async (req, res) => {
-    const awsData = await getAWSData();
-    res.json(awsData);
-  });
+    server.get("/azure", async (req, res, next) => {
+      try {
+        const data = await getAzureData();
+        res.json(data);
+      } catch (error) {
+        next(error);
+      }
+    });
 
-  server.use(bodyParser.json());
+    server.get("/aws", async (req, res, next) => {
+      try {
+        const awsData = await getAWSData();
+        res.json(awsData);
+      } catch (error) {
+        next(error);
+      }
+    });
 
-  server.get('/about', (req, res) => {
-    return app.render(req, res, '/about', req.query)
-  })
-  server.get('/forgot', (req, res) => {
-    return app.render(req, res, '/forgot', req.query)
-  })
+    server.use(bodyParser.json());
 
-  // server.get('/posts/:id', (req, res) => {
-  //   return app.render(req, res, '/posts', { id: req.params.id })
-  // })
+    server.get('/about', (req, res) => {
+      return app.render(req, res, '/about', req.query)
+    })
+    server.get('/forgot', (req, res) => {
+      return app.render(req, res, '/forgot', req.query)
+    })
 
-  server.get('/user/*', (req, res) => {
-    return app.render(req, res, '/user', { id: req.params.id })
-  })
+    // server.get('/posts/:id', (req, res) => {
+    //   return app.render(req, res, '/posts', { id: req.params.id })
+    // })
 
-  server.get('*', (req, res) => {
-    return handle(req, res)
-  })
+    server.get('/user/*', (req, res) => {
+      return app.render(req, res, '/user', { id: req.params.id })
+    })
 
-  const postStripeCharge = res => (stripeErr, stripeRes) => {
-    if (stripeErr) {
-      res.status(500).send({ error: stripeErr });
-    } else {
-      res.status(200).send({ success: stripeRes });
+    server.get('*', (req, res) => {
+      return handle(req, res)
+    })
+
+    const postStripeCharge = res => (stripeErr, stripeRes) => {
+      if (stripeErr) {
+        res.status(500).send({ error: stripeErr });
+      } else {
+        res.status(200).send({ success: stripeRes });
+      }
     }
-  }
 
-  server.post('/payment', (req, res) => {
-    console.log(' post data ', req.body)
-    stripe.charges.create(req.body, postStripeCharge(res))
-    // res.send(JSON.stringify({ status: true, message : 'ss s'}))
-    // stripe.charges.create(req.body, postStripeCharge(res));
+    server.post('/payment', (req, res) => {
+      console.log(' post data ', req.body)
+      stripe.charges.create(req.body, postStripeCharge(res))
+      // res.send(JSON.stringify({ status: true, message : 'ss s'}))
+      // stripe.charges.create(req.body, postStripeCharge(res));
+    });
+
+
+    server.listen(port, (err) => {
+      if (err) throw err
+      console.log(`> Ready on http://localhost:${port}`)
+    })
+
   });
-
-
-  server.listen(port, (err) => {
-    if (err) throw err
-    console.log(`> Ready on http://localhost:${port}`)
-  })
-
-});

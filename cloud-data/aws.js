@@ -13,7 +13,7 @@ async function getExchangeRate() {
     console.log(exchangeRate);
     return exchangeRate;
   } catch (error) {
-    console.log("Something has gone wrong while retrieving exchange rate");
+    throw new Error("Something has gone wrong while retrieving exchange rate")
   }
 }
 
@@ -120,10 +120,8 @@ async function getPricingForComputeEngineAWS(exchangeRate) {
     };
     return computeEnginePrices;
   } catch (error) {
-    console.log(
-      "Something has gone wrong while retrieving prices for compute engines aws " +
-        error
-    );
+    throw new Error("Something has gone wrong while retrieving prices for compute engines aws " +
+    error);
   }
 }
 
@@ -135,10 +133,8 @@ async function getPricingForStorageAWS(exchangeRate) {
     const price = response.data.prices[2].price.USD * exchangeRate;
     return { pricePerGb: price };
   } catch (error) {
-    console.log(
-      "Something has gone wrong while retrieving prices for Storage AWS " +
-        error
-    );
+    throw new Error("Something has gone wrong while retrieving prices for Storage AWS " +
+    error)
   }
 }
 

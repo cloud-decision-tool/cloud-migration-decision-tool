@@ -1,7 +1,7 @@
 import React from "react";
 import CloudResources from "./cloudResources";
 import PricingReview from "./pricingReview";
-import {sm} from "../../pages/util/util";
+import { sm } from "../../pages/util/util";
 import styles from "../../styles/styles";
 import { Typography, Row, Col, Button } from "antd";
 import axios from "axios";
@@ -15,6 +15,7 @@ const round = (value, decimals = 2) => {
 export default class CloudReview extends React.Component {
   state = {
     isLoading: true,
+    networkError: false,
     pricingData: {
       windows: {
         selectedValue: {
@@ -86,13 +87,21 @@ export default class CloudReview extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await axios.get("/azure");
-    const awsResponse = await axios.get("/aws");
-    this.setState({
-      azureCalculateData: response.data,
-      awsCalculateData: awsResponse.data,
-      isLoading: false
-    });
+    try {
+      console.log("Trying fetch data");
+      const response = await axios.get("/azure");
+      const awsResponse = await axios.get("/aws");
+      this.setState({
+        azureCalculateData: response.data,
+        awsCalculateData: awsResponse.data,
+        isLoading: false
+      });
+    } catch (error) {
+      this.setState({
+        isLoading: false,
+        networkError: true
+      });
+    }
   }
 
   onStorageSelected = ({ type, value, os }) => {
@@ -167,7 +176,9 @@ export default class CloudReview extends React.Component {
     if (this.state.isLoading) {
       return <p>Please wait while we fetch cloud pricing data...</p>;
     }
-
+    if (this.state.networkError) {
+      return <p>Something is wrong with the network. Please try again. </p>;
+    }
     return (
       <div className="App">
         <Title level={2} style={{ textAlign: 'center' }}>Choose your cloud resources</Title>
