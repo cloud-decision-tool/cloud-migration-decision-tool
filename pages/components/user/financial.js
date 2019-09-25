@@ -11,7 +11,7 @@ import moment from 'moment';
 import Report from './reporting';
 // var numeral = require('numeral');
 import numeral from 'numeral';
-import CloudReview from './../cloud-comparison/cloudReview';
+import CloudReview from './../../../cloud-data/components/cloudReview';
 
 // const OptionBtn = props => <Button type="primary" size={'large'} onClick={props.onUserClicked}
 // style={sm([ {minWidth: 300, padding:5, height: 50, backgroundColor: '#e8ecf1', borderColor: '#e8ecf1', color: '#000' }, styles.marRight20, styles.marTop40 ])}>{props.text}</Button>;
