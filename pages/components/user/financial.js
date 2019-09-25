@@ -213,9 +213,26 @@ export default class extends Component{
             </div>
           }
           {this.state.preset >= 0 && !this.state.analysis && this.props.analysis.toLowerCase() === "public" &&
+            // <div>
+            //   <p>You were reconmmeneded public cloud so you got nothing!</p>
+            //   <CloudReview />
+            // </div>
             <div>
-              <p>You were reconmmeneded public cloud so you got nothing!</p>
-              <CloudReview />
+              <CloudReview/>
+              <Row type="flex" justify="center">
+              <Col>
+                <Button
+                  loading={false}
+                  justify="center"
+                  style={sm([ styles.bggreen, styles.w200 ])}
+                  onClick={() => {
+                    this.setState({ analysis : true });
+                  }}
+                >
+                  Continue
+                </Button>
+              </Col>
+              </Row>
             </div>
           }
           {this.state.preset >= 0 && !this.state.analysis && this.props.analysis.toLowerCase() === "private" &&

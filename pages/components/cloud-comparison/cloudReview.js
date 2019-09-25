@@ -164,18 +164,14 @@ export default class CloudReview extends React.Component {
     });
   };
 
-  handleClick = () => {
-    console.log("backbtn is clicked");
-  };
-
   render() {
     if (this.state.isLoading) {
-      return <p>fetching data, please wait...</p>;
+      return <p>Please wait while we fetch cloud pricing data...</p>;
     }
 
     return (
       <div className="App">
-        <Title level={2}>Choose your cloud resources</Title>
+        <Title level={2} style={{textAlign : 'center'}}>Choose your cloud resources</Title>
         <Row style={{ marginTop: 40 }}>
           <Col span={12}>
             <Title level={4}>Window</Title>
@@ -202,17 +198,7 @@ export default class CloudReview extends React.Component {
           awsData={this.state.awsPricingData}
         />
 
-        <Row
-          type="flex"
-          justify="center"
-          style={{ marginBottom: 40, marginTop: 40 }}
-        >
-          <Col span={4}>
-            <Button size="large" onClick={this.handleClick}>
-              Go back
-            </Button>
-          </Col>
-        </Row>
+        <Row style={{ marginBottom: 40 }}></Row>
       </div>
     );
   }
