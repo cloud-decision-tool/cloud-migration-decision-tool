@@ -11,6 +11,7 @@ import moment from 'moment';
 import Report from './reporting';
 // var numeral = require('numeral');
 import numeral from 'numeral';
+import CloudReview from './../cloud-comparison/cloudReview';
 
 // const OptionBtn = props => <Button type="primary" size={'large'} onClick={props.onUserClicked}
 // style={sm([ {minWidth: 300, padding:5, height: 50, backgroundColor: '#e8ecf1', borderColor: '#e8ecf1', color: '#000' }, styles.marRight20, styles.marTop40 ])}>{props.text}</Button>;
@@ -212,7 +213,10 @@ export default class extends Component{
             </div>
           }
           {this.state.preset >= 0 && !this.state.analysis && this.props.analysis.toLowerCase() === "public" &&
-            <p>You were reconmmeneded public cloud so you got nothing!</p>
+            <div>
+              <p>You were reconmmeneded public cloud so you got nothing!</p>
+              <CloudReview />
+            </div>
           }
           {this.state.preset >= 0 && !this.state.analysis && this.props.analysis.toLowerCase() === "private" &&
           <Row type="flex" justify="center" align="top" style={sm([   ])}>

@@ -2,6 +2,9 @@ const express = require('express')
 const next = require('next')
 const compression = require('compression')
 
+const getAzureData = require('./cloud-data/azure')
+const getAWSData = require('./cloud-data/aws')
+
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const configureStripe = require('stripe');
@@ -19,22 +22,17 @@ app.prepare()
   const server = express()
   server.use(compression())
 
+  server.use(cors());
 
-
-  // const FRONTEND_DEV_URLS = [ 'http://localhost:3003' ];
-  // const FRONTEND_PROD_URLS = [
-  //   'http://www.touchon.com.au',
-  //   'http://touchon.com.au'
-  // ];
-  // const CORS_WHITELIST = process.env.NODE_ENV === 'production'? FRONTEND_PROD_URLS: FRONTEND_DEV_URLS;
-  // const corsOptions = {
-  //   origin: (origin, callback) =>
-  //     (CORS_WHITELIST.indexOf(origin) !== -1)
-  //       ? callback(null, true)
-  //       : callback(new Error('Not allowed by CORS'))
-  // };
-
-  // server.use(cors(corsOptions));
+  server.get("/azure", async (req, res) => {
+    const data = await getAzureData();
+    res.json(data);
+  });
+  
+  server.get("/aws", async (req, res) => {
+    const awsData = await getAWSData();
+    res.json(awsData);
+  });
 
   server.use(bodyParser.json());
 
