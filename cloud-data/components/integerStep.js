@@ -21,7 +21,7 @@ export default class IntegerStep extends React.Component {
     const { inputValue } = this.state;
 
     return (
-      <Row>
+      <Row style={{ marginRight: 14}}>
         <Col span={18}>
           <Slider
             min={this.props.min}
@@ -31,11 +31,11 @@ export default class IntegerStep extends React.Component {
             value={typeof inputValue === 'number' ? this.state.inputValue : 0}
           />
         </Col>
-        <Col span={4}>
+        <Col span={5}>
           <InputNumber
             min={this.props.min}
             max={this.props.max}
-            style={{ marginLeft: 24 }}
+            style={{ marginLeft: 2, width: 60}}
             value={inputValue}
             onChange={this.onChange}
           />
