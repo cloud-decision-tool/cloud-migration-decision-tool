@@ -13,8 +13,7 @@ const storageMarks = {
   200: '200',
   400: '400',
   600: '600',
-  800: '800',
-  1000: '1000'
+  800: '800'
 };
 const operationMarks = {
   20: '20',
@@ -59,8 +58,8 @@ export default class CloudResources extends React.Component {
     const { os } = this.props;
     const computeEngine = computeEngineTiers.map(tier => (
       <Row type="flex" justify="center" key={tier} id={tier}>
-        <Col span={3}> {capitalizeFirstLetter(tier)}</Col>
-        <Col span={10}>
+        <Col span={4}> {capitalizeFirstLetter(tier)}</Col>
+        <Col span={14}>
           <IntegerStep
             min={computeEngineMin}
             max={computeEngineMax}
@@ -70,20 +69,19 @@ export default class CloudResources extends React.Component {
             }
           />
         </Col>
-        <Col span={6}>instance(s)</Col>
+        <Col span={5}>instance(s)</Col>
       </Row>
     ));
 
     return (
-      <div className="App">
-        <Title level={4}>Compute Engines</Title>
-        {/* <p style={sm([ styles.textBold, styles.mar5, styles.textCenter, styles.marBot20, styles.fs18 ])}>Choose your usage tier</p> */}
+      <div className="App" style={{ fontSize: 12, marginTop: 20}}>
+        <Title level={4} style={{ marginBottom: 20, textAlign: 'center' }}>Compute Engines</Title>
         {computeEngine}
         <br />
-        <Title level={4}>Storage</Title>
+        <Title level={4} style={{ marginBottom: 20, textAlign: 'center' }}>Storage</Title>
         <Row type="flex" justify="center">
-          <Col span={3}>Storage</Col>
-          <Col span={10}>
+          <Col span={4}>Capacity</Col>
+          <Col span={16}>
             <IntegerStep
               min={diskMin}
               max={diskMax}
@@ -93,16 +91,11 @@ export default class CloudResources extends React.Component {
               }
             />
           </Col>
-          <Col span={5}>GB</Col>
-          {/* <Select defaultValue="gb" style={{ width: 120 }}>
-                <Option value="gb">GB</Option>
-                <Option value="tb">TB</Option>
-              </Select>
-            </Col> */}
+          <Col span={4}>GB</Col>
         </Row>
         <Row type="flex" justify="center" style={{ marginBottom: 40 }}>
-          <Col span={3}>Operation</Col>
-          <Col span={10}>
+          <Col span={4}>Operation</Col>
+          <Col span={16}>
             <IntegerStep
               min={operationMin}
               max={operationMax}
@@ -112,7 +105,7 @@ export default class CloudResources extends React.Component {
               }
             />
           </Col>
-          <Col span={5}>time(s)</Col>
+          <Col span={4}>time(s)</Col>
         </Row>
       </div>
     );

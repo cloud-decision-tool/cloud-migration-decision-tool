@@ -184,7 +184,7 @@ export default class CloudReview extends React.Component {
         <Title level={2} style={{ textAlign: 'center' }}>Choose your cloud resources</Title>
         <Row style={{ marginTop: 40 }}>
           <Col span={12}>
-            <Title level={4}>Window</Title>
+            <Title level={4} style={{ fontWeight: 'bold', textAlign: 'center' }}>Window</Title>
             <CloudResources
               os="windows"
               //platform
@@ -193,7 +193,7 @@ export default class CloudReview extends React.Component {
             />
           </Col>
           <Col span={12}>
-            <Title level={4}>Linux</Title>
+            <Title level={4} style={{ fontWeight: 'bold', textAlign: 'center' }}>Linux</Title>
             <CloudResources
               os="linux"
               onComputeSelected={this.onComputeSelected}
