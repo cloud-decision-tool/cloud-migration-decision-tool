@@ -105,10 +105,11 @@ export default class CloudReview extends React.Component {
   }
 
   onStorageSelected = ({ type, value, os }) => {
-    const storagePrice =
+    var storagePricePerGb =
       type === "disk"
         ? this.state.azureCalculateData.storage.smallDiskPrice
         : this.state.azureCalculateData.storage.operationPrices;
+    var storagePrice = storagePricePerGb * 1024;
 
     const priceValue = storagePrice * value;
     let newPrice = { ...this.state.pricingData[os].price };
@@ -116,8 +117,10 @@ export default class CloudReview extends React.Component {
     newPrice[type] = round(priceValue, 2);
     newSelected[type] = value;
 
-    const awsStoragePrice =
+    var awsStoragePricePerGb =
       type === "disk" ? this.state.awsCalculateData.storage.pricePerGb : 0;
+    var awsStoragePrice = awsStoragePricePerGb * 1024;
+
     const awsPriceValue = awsStoragePrice * value;
     let awsNewPrice = { ...this.state.awsPricingData[os].price };
     let awsNewSelected = { ...this.state.awsPricingData[os].selectedValue };
@@ -181,10 +184,17 @@ export default class CloudReview extends React.Component {
     }
     return (
       <div className="App">
-        <Title level={2} style={{ textAlign: 'center' }}>Choose your cloud resources</Title>
+        <Title level={2} style={{ textAlign: "center" }}>
+          Choose your cloud resources
+        </Title>
         <Row style={{ marginTop: 40 }}>
           <Col span={12}>
-            <Title level={4} style={{ fontWeight: 'bold', textAlign: 'center' }}>Window</Title>
+            <Title
+              level={4}
+              style={{ fontWeight: "bold", textAlign: "center" }}
+            >
+              Window
+            </Title>
             <CloudResources
               os="windows"
               //platform
@@ -193,7 +203,12 @@ export default class CloudReview extends React.Component {
             />
           </Col>
           <Col span={12}>
-            <Title level={4} style={{ fontWeight: 'bold', textAlign: 'center' }}>Linux</Title>
+            <Title
+              level={4}
+              style={{ fontWeight: "bold", textAlign: "center" }}
+            >
+              Linux
+            </Title>
             <CloudResources
               os="linux"
               onComputeSelected={this.onComputeSelected}
@@ -218,7 +233,7 @@ export default class CloudReview extends React.Component {
               onClick={this.props.onContinueSelected}
             >
               Continue
-                </Button>
+            </Button>
           </Col>
         </Row>
       </div>

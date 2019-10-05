@@ -1,31 +1,32 @@
-import * as React from 'react';
-import IntegerStep from './integerStep';
-import { Typography, Row, Col } from 'antd';
+import * as React from "react";
+import IntegerStep from "./integerStep";
+import { Typography, Row, Col } from "antd";
 
 const { Title } = Typography;
 const engineMarks = {
-  5: '5',
-  10: '10',
-  15: '15',
-  20: '20'
+  5: "5",
+  10: "10",
+  20: "20",
+  30: "30"
 };
 const storageMarks = {
-  200: '200',
-  400: '400',
-  600: '600',
-  800: '800'
+  1: "1",
+  5: "5",
+  10: "10",
+  20: "20",
+  30: "30"
 };
 const operationMarks = {
-  20: '20',
-  40: '40',
-  60: '60',
-  80: '80',
-  100: '100'
+  20: "20",
+  40: "40",
+  60: "60",
+  80: "80",
+  100: "100"
 };
 const computeEngineMin = 0;
-const computeEngineMax = 20;
+const computeEngineMax = 30;
 const diskMin = 0;
-const diskMax = 1000;
+const diskMax = 30;
 const operationMin = 0;
 const operationMax = 100;
 
@@ -33,7 +34,7 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-const computeEngineTiers = ['small', 'medium', 'large'];
+const computeEngineTiers = ["small", "medium", "large"];
 
 export default class CloudResources extends React.Component {
   state = {
@@ -74,11 +75,15 @@ export default class CloudResources extends React.Component {
     ));
 
     return (
-      <div className="App" style={{ fontSize: 12, marginTop: 20}}>
-        <Title level={4} style={{ marginBottom: 20, textAlign: 'center' }}>Compute Engines</Title>
+      <div className="App" style={{ fontSize: 12, marginTop: 20 }}>
+        <Title level={4} style={{ marginBottom: 20, textAlign: "center" }}>
+          Compute Engines
+        </Title>
         {computeEngine}
         <br />
-        <Title level={4} style={{ marginBottom: 20, textAlign: 'center' }}>Storage</Title>
+        <Title level={4} style={{ marginBottom: 20, textAlign: "center" }}>
+          Storage
+        </Title>
         <Row type="flex" justify="center">
           <Col span={4}>Capacity</Col>
           <Col span={16}>
@@ -87,11 +92,11 @@ export default class CloudResources extends React.Component {
               max={diskMax}
               marks={storageMarks}
               selectedValue={value =>
-                this.onStorageInputChange({ type: 'disk', value, os })
+                this.onStorageInputChange({ type: "disk", value, os })
               }
             />
           </Col>
-          <Col span={4}>GB</Col>
+          <Col span={4}>TB</Col>
         </Row>
         <Row type="flex" justify="center" style={{ marginBottom: 40 }}>
           <Col span={4}>Operation</Col>
@@ -101,7 +106,7 @@ export default class CloudResources extends React.Component {
               max={operationMax}
               marks={operationMarks}
               selectedValue={value =>
-                this.onStorageInputChange({ type: 'operation', value, os })
+                this.onStorageInputChange({ type: "operation", value, os })
               }
             />
           </Col>

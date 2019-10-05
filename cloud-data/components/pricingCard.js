@@ -21,7 +21,12 @@ export default class PricingCard extends React.Component {
     let total = 0;
 
     return (
-      <Card bordered={false} title={platform} style={{ textAlign: "center" }} headStyle={{ fontWeight: 'bold' }}>
+      <Card
+        bordered={false}
+        title={platform}
+        style={{ textAlign: "center" }}
+        headStyle={{ fontWeight: "bold" }}
+      >
         {Object.keys(cards).map(key => {
           const data = cards[key];
           const { selectedValue, price } = data;
@@ -67,14 +72,21 @@ export default class PricingCard extends React.Component {
               <Row type="flex" justify="center">
                 <Col span={6}>Capacity</Col>
                 <Col span={4}>{selectedValue.disk}</Col>
-                <Col span={7}>GB</Col>
+                <Col span={7}>TB</Col>
                 <Col span={5}>${price.disk.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center">
                 <Col span={6}>Operation</Col>
-                <Col span={4}>{platform === "AWS" ? "N/A" : selectedValue.operation}</Col>
+                <Col span={4}>
+                  {platform === "AWS" ? "N/A" : selectedValue.operation}
+                </Col>
                 <Col span={7}>times</Col>
-                <Col span={5}>${platform === "AWS" ? "N/A" : price.operation.toLocaleString()}</Col>
+                <Col span={5}>
+                  $
+                  {platform === "AWS"
+                    ? "N/A"
+                    : price.operation.toLocaleString()}
+                </Col>
               </Row>
             </Card>
           );
