@@ -26,6 +26,7 @@ export default class PricingCard extends React.Component {
         title={platform}
         style={{ textAlign: "center" }}
         headStyle={{ fontWeight: "bold" }}
+        bodyStyle={{ padding: 2, fontSize: 10}}
       >
         {Object.keys(cards).map(key => {
           const data = cards[key];
@@ -39,10 +40,10 @@ export default class PricingCard extends React.Component {
             price.operation;
 
           return (
-            <Card type="inner" title={key} style={{ marginBottom: 20 }}>
+            <Card type="inner" title={key} bodyStyle={{ padding: 2}} style={{ marginBottom: 20, fontSize: 12 }}>
               <Row>
                 <Col>
-                  <Title level={4}>Compute Engine</Title>
+                  <Title>Compute Engine</Title>
                 </Col>
               </Row>
 
@@ -66,7 +67,7 @@ export default class PricingCard extends React.Component {
               </Row>
               <Row>
                 <Col>
-                  <Title level={4}>Storage</Title>
+                  <Title>Storage</Title>
                 </Col>
               </Row>
               <Row type="flex" justify="center">
@@ -78,14 +79,12 @@ export default class PricingCard extends React.Component {
               <Row type="flex" justify="center">
                 <Col span={6}>Operation</Col>
                 <Col span={4}>
-                  {platform === "AWS" ? "N/A" : selectedValue.operation}
+                  {platform === "AWS" || platform === "Private" ? "N/A" : selectedValue.operation}
                 </Col>
                 <Col span={7}>times</Col>
                 <Col span={5}>
                   $
-                  {platform === "AWS"
-                    ? "N/A"
-                    : price.operation.toLocaleString()}
+                  {platform === "AWS" || platform === "Private" ? "N/A" : price.operation.toLocaleString()}
                 </Col>
               </Row>
             </Card>
@@ -94,10 +93,10 @@ export default class PricingCard extends React.Component {
 
         <Row type="flex" justify="center">
           <Col span={3}>
-            <Title level={4}>Total</Title>
+            <Title>Total</Title>
           </Col>
           <Col span={10}>
-            <Title level={4}>AUD {round(total, 2).toLocaleString()}</Title>
+            <Title>AUD {round(total, 2).toLocaleString()}</Title>
           </Col>
         </Row>
       </Card>

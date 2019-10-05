@@ -35,9 +35,10 @@ export default class IntegerStep extends React.Component {
           <InputNumber
             min={this.props.min}
             max={this.props.max}
-            style={{ marginLeft: 2, width: 60}}
+            style={{ marginLeft: 2, width: 60, fontSize: 12 }}
             value={inputValue}
             onChange={this.onChange}
+            bodyStyle={{ fontSize: 12 }}
           />
         </Col>
       </Row>
