@@ -54,22 +54,22 @@ export default class PricingCard extends React.Component {
               </Row>
 
               <Row type="flex" justify="center">
-                <Col span={6}>Small</Col>
-                <Col span={4}>{selectedValue.small}</Col>
+                <Col span={5}>Small</Col>
+                <Col span={3}>{selectedValue.small}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={5}>${price.small.toLocaleString()}</Col>
+                <Col span={7}>${price.small.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center">
-                <Col span={6}>Medium</Col>
-                <Col span={4}>{selectedValue.medium}</Col>
+                <Col span={5}>Medium</Col>
+                <Col span={3}>{selectedValue.medium}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={5}>${price.medium.toLocaleString()}</Col>
+                <Col span={7}>${price.medium.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center" style={{ marginBottom: 20 }}>
-                <Col span={6}>Large</Col>
-                <Col span={4}>{selectedValue.large}</Col>
+                <Col span={5}>Large</Col>
+                <Col span={3}>{selectedValue.large}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={5}>${price.large.toLocaleString()}</Col>
+                <Col span={7}>${price.large.toLocaleString()}</Col>
               </Row>
               <Row>
                 <Col>
@@ -79,18 +79,17 @@ export default class PricingCard extends React.Component {
               <Row type="flex" justify="center">
                 <Col span={6}>Capacity</Col>
                 <Col span={4}>{selectedValue.disk}</Col>
-                <Col span={7}>TB</Col>
-                <Col span={5}>${price.disk.toLocaleString()}</Col>
+                <Col span={6}>TB</Col>
+                <Col span={7}>${price.disk.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center">
                 <Col span={6}>Operation</Col>
                 <Col span={4}>
                   {platform === "AWS" || platform === "Private" ? "N/A" : selectedValue.operation}
                 </Col>
-                <Col span={7}>times</Col>
-                <Col span={5}>
-                  $
-                  {platform === "AWS" || platform === "Private" ? "N/A" : price.operation.toLocaleString()}
+                <Col span={6}>times</Col>
+                <Col span={7}>
+                  ${platform === "AWS" || platform === "Private" ? "N/A" : price.operation.toLocaleString()}
                 </Col>
               </Row>
             </Card>
