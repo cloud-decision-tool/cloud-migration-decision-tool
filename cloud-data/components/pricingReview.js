@@ -12,10 +12,10 @@ class PricingReview extends React.Component {
       <div style={{ background: "#ECECEC", padding: "5px" }}>
         <Row>
           <Col span={8}>
-            <PricingCard data={pricingData} platform="Azure" key="Azure" />
+            <PricingCard data={awsPricingData} platform="AWS" key="AWS" />
           </Col>
           <Col span={8}>
-            <PricingCard data={awsPricingData} platform="AWS" key="AWS" />
+            <PricingCard data={pricingData} platform="Azure" key="Azure" />
           </Col>
           <Col span={8}>
             <PricingCard data={privateCloudData} platform="Private" key="Private" />

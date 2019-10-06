@@ -8,7 +8,7 @@ export default class PricingCard extends React.Component {
     const pricingData = this.props.data;
     const platform = this.props.platform;
     const { windows, linux } = pricingData;
-
+    const { Meta } = Card;
     const cards = {
       Windows: windows,
       Linux: linux
@@ -23,18 +23,24 @@ export default class PricingCard extends React.Component {
     return (
       <Card
         bordered={false}
-        title={platform}
         style={{ textAlign: "center" }}
-        headStyle={{ fontWeight: "bold" }}
-        bodyStyle={{ padding: 2, fontSize: 10}}
+        bodyStyle={{ padding: 2, fontSize: 12 }}
       >
+        <Meta
+          style={{ marginTop: 10, marginBottom: 10 }}
+          title={
+            platform === "AWS" ? <img alt="logo" src="/static/images/aws.png"/> : null ||
+            platform === "Azure" ? <img alt="logo" src="/static/images/azure.png"/> : null ||
+            platform === "Private" ? <img alt="logo" src="/static/images/privateCloud.png"/> : null}
+          description={platform === "Private" ? "Private cloud" : "Public cloud"}/>
+
         {Object.keys(cards).map(key => {
           const data = cards[key];
           const { selectedValue, price } = data;
 
           total +=
             price.small +
-            price.medium +
+            price.medium +  
             price.large +
             price.disk +
             price.operation;
@@ -43,7 +49,7 @@ export default class PricingCard extends React.Component {
             <Card type="inner" title={key} bodyStyle={{ padding: 2}} style={{ marginBottom: 20, fontSize: 12 }}>
               <Row>
                 <Col>
-                  <Title>Compute Engine</Title>
+                  <Title style={{ lineHeight: 4 }}>Compute Engine</Title>
                 </Col>
               </Row>
 
@@ -67,7 +73,7 @@ export default class PricingCard extends React.Component {
               </Row>
               <Row>
                 <Col>
-                  <Title>Storage</Title>
+                  <Title style={{ lineHeight: 4 }}>Storage</Title>
                 </Col>
               </Row>
               <Row type="flex" justify="center">
