@@ -96,13 +96,9 @@ export default class PricingCard extends React.Component {
           );
         })}
 
-        <Row type="flex" justify="center">
-          <Col span={3}>
-            <Title>Total</Title>
-          </Col>
-          <Col span={10}>
-            <Title>AUD {round(total, 2).toLocaleString()}</Title>
-          </Col>
+        <Row type="flex" justify="center" style={{ fontWeight: "bold", fontSize: 14}}>
+          <Col span={5}>Total</Col>
+          <Col span={14}>AUD {round(total, 2).toLocaleString()}</Col>
         </Row>
       </Card>
     );
