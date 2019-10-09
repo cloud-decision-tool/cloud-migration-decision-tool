@@ -10,7 +10,6 @@ const engineMarks = {
   30: "30"
 };
 const storageMarks = {
-  1: "1",
   5: "5",
   10: "10",
   20: "20",

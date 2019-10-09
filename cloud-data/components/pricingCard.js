@@ -8,7 +8,7 @@ export default class PricingCard extends React.Component {
     const pricingData = this.props.data;
     const platform = this.props.platform;
     const { windows, linux } = pricingData;
-
+    const { Meta } = Card;
     const cards = {
       Windows: windows,
       Linux: linux
@@ -23,82 +23,82 @@ export default class PricingCard extends React.Component {
     return (
       <Card
         bordered={false}
-        title={platform}
         style={{ textAlign: "center" }}
-        headStyle={{ fontWeight: "bold" }}
+        bodyStyle={{ padding: 2, fontSize: 12 }}
       >
+        <Meta
+          style={{ marginTop: 10, marginBottom: 10 }}
+          title={
+            platform === "AWS" ? <img alt="logo" src="/static/images/aws.png"/> : null ||
+            platform === "Azure" ? <img alt="logo" src="/static/images/azure.png"/> : null ||
+            platform === "Private" ? <img alt="logo" src="/static/images/privateCloud.png"/> : null}
+          description={platform === "Private" ? "Private cloud" : "Public cloud"}/>
+
         {Object.keys(cards).map(key => {
           const data = cards[key];
           const { selectedValue, price } = data;
 
           total +=
             price.small +
-            price.medium +
+            price.medium +  
             price.large +
             price.disk +
             price.operation;
 
           return (
-            <Card type="inner" title={key} style={{ marginBottom: 20 }}>
+            <Card type="inner" title={key} bodyStyle={{ padding: 2}} style={{ marginBottom: 20, fontSize: 12 }}>
               <Row>
                 <Col>
-                  <Title level={4}>Compute Engine</Title>
+                  <Title style={{ lineHeight: 4 }}>Compute Engine</Title>
                 </Col>
               </Row>
 
               <Row type="flex" justify="center">
-                <Col span={6}>Small</Col>
-                <Col span={4}>{selectedValue.small}</Col>
+                <Col span={5}>Small</Col>
+                <Col span={3}>{selectedValue.small}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={5}>${price.small.toLocaleString()}</Col>
+                <Col span={7}>${price.small.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center">
-                <Col span={6}>Medium</Col>
-                <Col span={4}>{selectedValue.medium}</Col>
+                <Col span={5}>Medium</Col>
+                <Col span={3}>{selectedValue.medium}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={5}>${price.medium.toLocaleString()}</Col>
+                <Col span={7}>${price.medium.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center" style={{ marginBottom: 20 }}>
-                <Col span={6}>Large</Col>
-                <Col span={4}>{selectedValue.large}</Col>
+                <Col span={5}>Large</Col>
+                <Col span={3}>{selectedValue.large}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={5}>${price.large.toLocaleString()}</Col>
+                <Col span={7}>${price.large.toLocaleString()}</Col>
               </Row>
               <Row>
                 <Col>
-                  <Title level={4}>Storage</Title>
+                  <Title style={{ lineHeight: 4 }}>Storage</Title>
                 </Col>
               </Row>
               <Row type="flex" justify="center">
                 <Col span={6}>Capacity</Col>
                 <Col span={4}>{selectedValue.disk}</Col>
-                <Col span={7}>TB</Col>
-                <Col span={5}>${price.disk.toLocaleString()}</Col>
+                <Col span={6}>TB</Col>
+                <Col span={7}>${price.disk.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center">
                 <Col span={6}>Operation</Col>
                 <Col span={4}>
-                  {platform === "AWS" ? "N/A" : selectedValue.operation}
+                  {platform === "AWS" || platform === "Private" ? "N/A" : selectedValue.operation}
                 </Col>
-                <Col span={7}>times</Col>
-                <Col span={5}>
-                  $
-                  {platform === "AWS"
-                    ? "N/A"
-                    : price.operation.toLocaleString()}
+                <Col span={6}>times</Col>
+                <Col span={7}>
+                  ${platform === "AWS" || platform === "Private" ? "N/A" : price.operation.toLocaleString()}
                 </Col>
               </Row>
             </Card>
           );
         })}
 
-        <Row type="flex" justify="center">
-          <Col span={3}>
-            <Title level={4}>Total</Title>
-          </Col>
-          <Col span={10}>
-            <Title level={4}>AUD {round(total, 2).toLocaleString()}</Title>
-          </Col>
+        <Row type="flex" justify="center" style={{ fontWeight: "bold", fontSize: 14}}>
+          <Col span={5}>Total</Col>
+          <Col span={14}>AUD {round(total, 2).toLocaleString()}</Col>
         </Row>
       </Card>
     );

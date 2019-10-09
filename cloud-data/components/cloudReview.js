@@ -12,6 +12,41 @@ const round = (value, decimals = 2) => {
   return Number(Math.round(value + "e" + decimals) + "e-" + decimals);
 };
 
+const privateCloudData = {
+  windows: {
+    selectedValue: {
+      small: 12,
+      medium: 16,
+      large: 8,
+      disk: 27,
+      operation: 0
+    },
+    price: {
+      small: 0,
+      medium: 0,
+      large: 0,
+      disk: 0,
+      operation: 0
+    }
+  },
+  linux: {
+    selectedValue: {
+      small: 12,
+      medium: 16,
+      large: 8,
+      disk: 27,
+      operation: 0
+    },
+    price: {
+      small: 0,
+      medium: 0,
+      large: 0,
+      disk: 0,
+      operation: 0
+    }
+  }
+}
+
 export default class CloudReview extends React.Component {
   state = {
     isLoading: true,
@@ -221,6 +256,7 @@ export default class CloudReview extends React.Component {
           selectedValue={this.state.selectedValue}
           data={this.state.pricingData}
           awsData={this.state.awsPricingData}
+          privateCloudData={privateCloudData}
         />
 
         <Row style={{ marginBottom: 40 }}></Row>
