@@ -15,10 +15,10 @@ const round = (value, decimals = 2) => {
 const privateCloudData = {
   windows: {
     selectedValue: {
-      small: 12,
-      medium: 16,
-      large: 8,
-      disk: 27,
+      small: 6,
+      medium: 8,
+      large: 4,
+      disk: 13,
       operation: 0
     },
     price: {
@@ -31,10 +31,10 @@ const privateCloudData = {
   },
   linux: {
     selectedValue: {
-      small: 12,
-      medium: 16,
-      large: 8,
-      disk: 27,
+      small: 0,
+      medium: 0,
+      large: 0,
+      disk: 0,
       operation: 0
     },
     price: {
@@ -131,12 +131,82 @@ export default class CloudReview extends React.Component {
         awsCalculateData: awsResponse.data,
         isLoading: false
       });
+      // calculate the default price here and put it in pricingData and awsPricingData
+      const initialData = this.getDefaultValueForAWS(awsResponse.data);
+      const azureInitialData = this.getDefaultValueForAzure(response.data);
+      this.setState(prevState => ({
+        pricingData: {
+          ...prevState.pricingData,
+          windows: azureInitialData
+        },
+        awsPricingData: {
+          ...prevState.awsPricingData,           
+          windows: initialData
+        }
+      }))
     } catch (error) {
       this.setState({
         isLoading: false,
         networkError: true
       });
     }
+  }
+
+  getDefaultValueForAWS = (awsPricingData, azurePricingData) => {
+    const storagePricePerGb = awsPricingData.storage.pricePerGb;
+    
+    const storagePrice = storagePricePerGb * 1024;
+    const defaultSmallTshirt = {
+      small: 6,
+      medium: 8,
+      large: 4,
+      disk: 13,
+      operation: 0
+    }
+    const windowsSmallPrice = round(awsPricingData.computeEngine.windows.small * defaultSmallTshirt.small, 2);
+    const windowsMediumPrice = round(awsPricingData.computeEngine.windows.medium * defaultSmallTshirt.medium, 2);
+    const windowsLargePrice = round(awsPricingData.computeEngine.windows.large * defaultSmallTshirt.large, 2);
+    const diskPrice = round(storagePrice * defaultSmallTshirt.disk, 2);
+    const initialData = {
+      selectedValue: defaultSmallTshirt,
+      price: {
+        small: windowsSmallPrice,
+        medium: windowsMediumPrice,
+        large: windowsLargePrice,
+        disk: diskPrice,
+        operation: 0
+      }
+    }
+
+    return initialData;
+  }
+
+  getDefaultValueForAzure = azurePricingData => {
+    const azureStoragePrice = azurePricingData.storage.smallDiskPrice * 1024;
+    const defaultSmallTshirt = {
+      small: 6,
+      medium: 8,
+      large: 4,
+      disk: 13,
+      operation: 0
+    }
+
+    const azureWindowsSmallPrice = round(azurePricingData.computeEngine.windows.small * defaultSmallTshirt.small ,2);
+    const azureWindowsMediumPrice = round(azurePricingData.computeEngine.windows.medium * defaultSmallTshirt.medium ,2);
+    const azureWindowsLargePrice = round(azurePricingData.computeEngine.windows.large * defaultSmallTshirt.large ,2);
+
+    const azureDiskPrice = round(azureStoragePrice * defaultSmallTshirt.disk, 2);
+    const azureInitialData = {
+      selectedValue: defaultSmallTshirt,
+      price: {
+        small: azureWindowsSmallPrice,
+        medium: azureWindowsMediumPrice,
+        large: azureWindowsLargePrice,
+        disk: azureDiskPrice,
+        operation: 0
+      }
+    }
+    return azureInitialData;
   }
 
   onStorageSelected = ({ type, value, os }) => {
@@ -210,6 +280,16 @@ export default class CloudReview extends React.Component {
     });
   };
 
+  getInitialInputValue = tier => {
+    if (tier === "small") {
+      return 6;
+    } else if (tier === "medium") {
+      return 8;
+    } else {
+      return 4;
+    }
+  }
+
   render() {
     if (this.state.isLoading) {
       return <p>Please wait while we fetch cloud pricing data...</p>;
@@ -228,11 +308,12 @@ export default class CloudReview extends React.Component {
               level={4}
               style={{ fontWeight: "bold", textAlign: "center" }}
             >
-              Window
+              Windows
             </Title>
             <CloudResources
               os="windows"
               //platform
+              getInitialInputValue={this.getInitialInputValue}
               onComputeSelected={this.onComputeSelected}
               onStorageSelected={this.onStorageSelected}
             />
@@ -242,10 +323,11 @@ export default class CloudReview extends React.Component {
               level={4}
               style={{ fontWeight: "bold", textAlign: "center" }}
             >
-              Linux
+              Linux (Optional)
             </Title>
             <CloudResources
               os="linux"
+              getInitialInputValue={this.getInitialInputValue}
               onComputeSelected={this.onComputeSelected}
               onStorageSelected={this.onStorageSelected}
             />
