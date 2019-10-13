@@ -152,7 +152,7 @@ export default class CloudReview extends React.Component {
     }
   }
 
-  getDefaultValueForAWS = (awsPricingData, azurePricingData) => {
+  getDefaultValueForAWS = (awsPricingData) => {
     const storagePricePerGb = awsPricingData.storage.pricePerGb;
     
     const storagePrice = storagePricePerGb * 1024;
