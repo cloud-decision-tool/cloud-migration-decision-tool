@@ -6,7 +6,7 @@ export default class IntegerStep extends React.Component {
     super(props);
     this.onChange = this.onChange.bind(this);
     this.state = {
-      inputValue: 0
+      inputValue: this.props.inputValue
     };
   }
 
@@ -28,6 +28,7 @@ export default class IntegerStep extends React.Component {
             max={this.props.max}
             marks={this.props.marks}
             onChange={this.onChange}
+            defaultValue={12}
             value={typeof inputValue === 'number' ? this.state.inputValue : 0}
           />
         </Col>
@@ -38,6 +39,7 @@ export default class IntegerStep extends React.Component {
             style={{ marginLeft: 2, width: 60, fontSize: 12 }}
             value={inputValue}
             onChange={this.onChange}
+            defaultValue={12}
             bodyStyle={{ fontSize: 12 }}
           />
         </Col>

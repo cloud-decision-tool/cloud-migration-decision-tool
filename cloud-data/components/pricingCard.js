@@ -31,19 +31,23 @@ export default class PricingCard extends React.Component {
           title={
             platform === "AWS" ? <img alt="logo" src="/static/images/aws.png"/> : null ||
             platform === "Azure" ? <img alt="logo" src="/static/images/azure.png"/> : null ||
-            platform === "Private" ? <img alt="logo" src="/static/images/privateCloud.png"/> : null}
+            platform === "Private" ? <img alt="logo" src="/static/images/private.png"/> : null}
           description={platform === "Private" ? "Private cloud" : "Public cloud"}/>
 
         {Object.keys(cards).map(key => {
           const data = cards[key];
           const { selectedValue, price } = data;
 
-          total +=
-            price.small +
-            price.medium +  
-            price.large +
-            price.disk +
-            price.operation;
+          if (platform === "Private") {
+            total = 100025;
+          } else {
+            total +=
+              price.small +
+              price.medium +  
+              price.large +
+              price.disk +
+              price.operation;
+          }
 
           return (
             <Card type="inner" title={key} bodyStyle={{ padding: 2}} style={{ marginBottom: 20, fontSize: 12 }}>

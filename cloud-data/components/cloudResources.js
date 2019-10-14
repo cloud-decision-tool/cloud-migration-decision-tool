@@ -54,6 +54,8 @@ export default class CloudResources extends React.Component {
     this.props.onComputeSelected(data);
   };
 
+  
+  
   render() {
     const { os } = this.props;
     const computeEngine = computeEngineTiers.map(tier => (
@@ -64,6 +66,7 @@ export default class CloudResources extends React.Component {
             min={computeEngineMin}
             max={computeEngineMax}
             marks={engineMarks}
+            inputValue={this.props.os==="windows" ? this.props.getInitialInputValue(tier) : 0}
             selectedValue={value =>
               this.onComputeInputChange({ size: tier, value, os })
             }
@@ -90,6 +93,7 @@ export default class CloudResources extends React.Component {
               min={diskMin}
               max={diskMax}
               marks={storageMarks}
+              inputValue={this.props.os === "windows" ? 13 : 0}
               selectedValue={value =>
                 this.onStorageInputChange({ type: "disk", value, os })
               }
