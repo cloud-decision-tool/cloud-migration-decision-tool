@@ -24,10 +24,11 @@ export default class PricingCard extends React.Component {
       <Card
         bordered={false}
         style={{ textAlign: "center" }}
-        bodyStyle={{ padding: 2, fontSize: 12 }}
+        bodyStyle={{ padding: 2 }}
+        headStyle={{ fontWeight: 'bold'}}
       >
         <Meta
-          style={{ marginTop: 10, marginBottom: 10 }}
+          style={{ marginTop: 10, marginBottom: 10, fontSize: 15, fontWeight: 'bold' }}
           title={
             platform === "AWS" ? <img alt="logo" src="/static/images/aws.png"/> : null ||
             platform === "Azure" ? <img alt="logo" src="/static/images/azure.png"/> : null ||
@@ -49,11 +50,11 @@ export default class PricingCard extends React.Component {
               price.operation;
           }
 
-          return (
-            <Card type="inner" title={key} bodyStyle={{ padding: 2}} style={{ marginBottom: 20, fontSize: 12 }}>
+          return ( // s m l c o text
+            <Card type="inner" title={key} headStyle={{ fontsize:15, fontWeight: 'bold' }} bodyStyle={{ padding: 2}} style={{ marginBottom: 20, fontSize: 13, fontWeight: 'bold' }}>
               <Row>
                 <Col>
-                  <Title style={{ lineHeight: 4 }}>Compute Engine</Title>
+                  <Title style={{ lineHeight: 4, fontsize: 14, fontWeight:'bold' }}>Compute Engine</Title>
                 </Col>
               </Row>
 
@@ -61,30 +62,30 @@ export default class PricingCard extends React.Component {
                 <Col span={5}>Small</Col>
                 <Col span={3}>{selectedValue.small}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={7}>${price.small.toLocaleString()}</Col>
+                <Col span={7}>$ {platform === "Private" ? "N/A" : price.small.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center">
                 <Col span={5}>Medium</Col>
                 <Col span={3}>{selectedValue.medium}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={7}>${price.medium.toLocaleString()}</Col>
+                <Col span={7}>$ {platform === "Private" ? "N/A" : price.medium.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center" style={{ marginBottom: 20 }}>
                 <Col span={5}>Large</Col>
                 <Col span={3}>{selectedValue.large}</Col>
                 <Col span={7}>instances</Col>
-                <Col span={7}>${price.large.toLocaleString()}</Col>
+                <Col span={7}>$ {platform === "Private" ? "N/A" : price.large.toLocaleString()}</Col>
               </Row>
               <Row>
                 <Col>
-                  <Title style={{ lineHeight: 4 }}>Storage</Title>
+                  <Title style={{ lineHeight: 4, fontsize: 14, fontWeight: 'bold' }}>Storage</Title>
                 </Col>
               </Row>
               <Row type="flex" justify="center">
                 <Col span={6}>Capacity</Col>
                 <Col span={4}>{selectedValue.disk}</Col>
                 <Col span={6}>TB</Col>
-                <Col span={7}>${price.disk.toLocaleString()}</Col>
+                <Col span={7}>$ {platform === "Private" ? "N/A" : price.disk.toLocaleString()}</Col>
               </Row>
               <Row type="flex" justify="center">
                 <Col span={6}>Operation</Col>
